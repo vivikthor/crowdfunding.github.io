@@ -1,0 +1,552 @@
+/* /// ---------------------------------------------------- /// */
+/* /// ------------------------ XL ------------------------ /// */
+/* /// ---------------------------------------------------- /// */
+
+@media only screen and (min-width: 1200px) {
+
+
+    /* --- APP-BAR --- */
+    #app-bar {
+        display: none;
+    }
+}
+
+/* /// ---------------------------------------------------- /// */
+@media only screen and (max-width: 1200px) {
+
+    section {
+         padding: 4rem;
+        overflow: hidden;
+    }
+
+
+
+    #navbar.pc {
+        display: none;
+    }
+
+    .navbar li::before {
+        display: none;
+    }
+
+    /* --- HEADER --- */
+    header#hero {
+        padding-top: 4rem;
+        background-size: 80vw, cover;
+        background-position: 27vw 25vh;
+    }
+
+    /* --- MYTHS --- */
+
+    #intro .myths .myth-wrapper {
+        padding: 3rem;
+    }
+
+    /* --- WHAT'S ALREADY DONE --- */
+    #done ul.features {
+        padding: 3rem 0 !important;
+    }
+
+
+
+    /* --- PUXL ZONE --- */
+    #doing .zonemap {
+        width: 90vw;
+    }
+
+
+    /* --- WANT TO FUND --- */
+    #fund .grid:nth-of-type(1) {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    /* --- PUXL EASY CODING --- */
+    #fund #puxl-easy-coding {
+        padding: 15rem 5rem;
+    }
+
+/* --- BUDGET --- */
+    section#budget ul li span {
+        flex-flow: column wrap;
+    }
+
+    /* --- DONATE --- */
+    section#donate form {
+        padding: 0 20%;
+    }
+
+    section#donate p {
+        padding: 0 10%;
+    }
+
+    #fund #puxl-easy-coding .link-img {
+        top: 0rem;
+    }
+
+    /* --- ABOUT US --- */
+    .person ul {
+        margin-top: 1.8rem !important;
+
+}
+
+/* /// ---------------------------------------------------- /// */
+/* /// ------------------------ LG ------------------------ /// */
+/* /// ---------------------------------------------------- /// */
+
+
+
+@media only screen and (max-width: 992px) {
+
+    section h1:nth-child(1),
+    section h2:nth-child(1),
+    section h3:nth-child(1),
+    section h4:nth-child(1),
+    section h5:nth-child(1),
+    section h6:nth-child(1) {
+        margin-bottom: 2rem;
+    }
+
+    /* --- APP-BAR --- */
+    .navbar li {
+        padding: 0 !important;
+    }
+
+
+
+    /* --- ALREADY DONE --- */
+    #done article>div.main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* --- PUXL ZONE --- */
+    #doing .zonemap .logo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -8%) !important;
+        width: 10rem;
+    }
+
+    #doing .zonemap ul li:nth-child(1) {
+        margin-top: 5rem;
+    }
+
+    #doing .zonemap ul li {
+        grid-template-areas:
+            "ico"
+            "txt" !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 100px 1fr !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+
+    #doing .zonemap ul li * {
+        text-align: center;
+    }
+
+    #doing .zonemap ul li p {
+        font-size: 1.2rem;
+    }
+
+    #doing .video {
+        margin: 0 auto 10rem auto;
+    }
+
+
+    #doing .zonemap ul {
+        margin: 5rem 0 10rem 0 !important;
+        grid-template-columns: 1fr;
+        box-shadow: 0 0 0 2px var(--puxl);
+        border-radius: 25px;
+    }
+
+    #doing .zonemap ul li:not(.store)::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        height: 2px;
+        width: 50%;
+        transform: translate(-50%);
+        background-color: var(--puxl);
+    }
+
+    #doing .zonemap ul li.learn::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        height: 2px;
+        width: 50%;
+        transform: translate(-50%);
+        background-color: var(--puxl);
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #doing .zonemap ul li.blog::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        top: unset;
+        right: unset;
+        left: 50%;
+        height: 2px;
+        width: 50%;
+        transform: translate(-50%);
+        background-color: var(--puxl);
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+
+    /* --- WANT TO FUND --- */
+    #fund .grid:nth-of-type(1) {
+        width: 100%;
+    }
+
+    /* --- DONATE --- */
+    .tabs>div:first-of-type{
+        overflow: hidden;
+    }
+
+    section#donate form {
+        padding: 0 30%;
+    }
+
+    .tab-wrapper {
+        padding: 0 4rem;
+    }
+
+    .tabs div[role=tabpanel] {
+        padding: 1.5rem;
+    }
+
+    .tabs div[role=tabpanel] .type li.title {
+        width: auto;
+    }
+
+    /* --- FOOTER --- */
+    .legal ul {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+/* /// ---------------------------------------------------- /// */
+/* /// ------------------------ MD ------------------------ /// */
+/* /// ---------------------------------------------------- /// */
+@media only screen and (max-width: 768px) {
+
+
+    section {
+        padding: 4rem;
+    }
+
+
+    /* --- APP-BAR --- */
+    #app-bar #app-bar__menu {
+        padding: 1rem;
+    }
+
+    .app.bar .subheading[aria-hidden=false] a {
+        font-size: 1.5rem;
+    }
+
+    .app.bar .subheading[aria-hidden=false] li::after {
+        height: 2px;
+    }
+
+
+    /* --- HEADER --- */
+    header#hero img.logo {
+        height: 50px;
+        margin: 0 auto !important;
+    }
+
+    header#hero h1#main_heading {
+        font-size: 2rem;
+    }
+
+
+    /* --- INTRO --- */
+    #intro blockquote footer cite {
+        flex-flow: column nowrap;
+    }
+
+    #intro .graph p::before {
+        display: none;
+    }
+
+    #intro .graph p {
+        text-align: center;
+    }
+
+    /* --- MYTHS --- */
+    #intro .myths .myth-wrapper {
+        padding: 0 !important;
+    }
+
+    #intro .myths .myth {
+        width: 100%;
+        max-width: 100%;
+        flex: auto;
+    }
+
+    /* --- ALREADY DONE --- */
+    #done article>div.main {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 13rem 1fr !important;
+        grid-template-areas:
+            "img"
+            "texto" !important;
+        gap: 2rem;
+    }
+
+    #done ul.features {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+    }
+
+    /* --- WANT TO FUND --- */
+    #doing .zonemap ul {
+        padding-top: 5rem !important;
+    }
+
+
+
+    /* --- WANT TO FUND --- */
+    #fund .grid:nth-of-type(1){
+        max-width: unset;
+        margin-bottom: 4rem;
+    }
+    
+    #fund ul{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #fund #puxl-easy-coding {
+        padding: 7rem 4rem 4rem 4rem;
+    }
+
+    /* --- BUTTONS --- */
+    button.read {
+        width: 90%;
+    }
+
+    /* --- DONATE --- */
+    section#donate h3,
+    section#donate p {
+        width: 90%;
+    }
+
+    .tab-wrapper {
+        padding: 0 1rem;
+    }
+
+    .tabs div[role=tabpanel] {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    /* --- ABOUT --- */
+    section#about div.team {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 4rem;
+        position: relative;
+    }
+
+    .team .deco {
+        display: none;
+    }
+}
+
+/* /// ---------------------------------------------------- /// */
+/* /// ------------------------ SM ------------------------ /// */
+/* /// ---------------------------------------------------- /// */
+@media only screen and (max-width: 576px) {
+    section {
+        padding: 1.2rem;
+    }
+
+    /* --- INTRO --- */
+
+    /* --- ALREADY DONE --- */
+    #done article {
+        padding: 1rem;
+    }
+
+    #done article .bar {
+        display: none;
+    }
+
+}
+
+/* /// ---------------------------------------------------- /// */
+/* /// ------------------------ XS ------------------------ /// */
+/* /// ---------------------------------------------------- /// */
+@media only screen and (max-width: 480px) {
+
+    *,
+    p {
+        font-size: 1.2rem;
+    }
+
+    /* --- INTRO --- */
+    #intro blockquote {
+        padding: 1rem;
+    }
+
+    #intro .introtxt {
+        margin: 7rem auto;
+    }
+
+    #intro .graph * {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #intro .graph p b {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    #intro .myths h5, #intro .myths b{
+        font-size: 2rem;
+    }
+
+    /* --- ALREADY DONE --- */
+    #done article>div.main h3 {
+        font-size: 2.5rem;
+    }
+
+    #done article .pre p {
+        font-size: 1.2rem;
+    }
+
+    #done ul.features li * {
+        font-size: 1.2rem !important;
+    }
+
+    #done ul.features li img {
+        width: 80px;
+    }
+
+    /* --- WANT TO FUND --- */
+    #fund ul.grid {
+        margin-bottom: 5rem;
+    }
+
+    #fund #puxl-easy-coding .link-img {
+        top: -4rem;
+    }
+
+    #fund #puxl-easy-coding {
+        padding: 7rem 1rem;
+    }
+
+    #fund #puxl-easy-coding span .deco {
+        top: 70px;
+    }
+
+    #fund #puxl-easy-coding h3 {
+        font-size: 2rem;
+    }
+
+
+    /* --- BUDGET --- */
+    section#budget .total {
+        font-size: 3rem;
+    }
+
+    section#budget ul li {
+        grid-template-columns: 60px 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    section#budget ul li svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    section#budget ul li span {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    section#budget ul li span p {
+        font-size: 1.2rem;
+
+    }
+
+
+    /* --- DONATE --- */
+    .tab-wrapper {
+        padding: 0;
+    }
+
+    .tabs.col-xs-12 {
+        margin: 0;
+    }
+
+    .tabs>div:first-of-type>button.tab-icn-txt.v {
+        padding: .5rem;
+    }
+
+    .tabs>div:first-of-type>button[class*=icn]>img,
+    .tabs>div:first-of-type>button[class*=icn]>svg {
+        width: 3rem;
+    }
+
+    .tabs div[role=tabpanel] .moto {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+
+    .tabs div[role=tabpanel] .type li:not(.title)::after {
+        height: calc(100% + 5rem);
+    }
+
+    section#donate form {
+        padding: 0 10%;
+    }
+
+
+
+
+
+    /* --- FOOTER --- */
+    footer#footer {
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    footer#footer h2 {
+        font-size: 1.8rem;
+    }
+
+    footer#footer a.cta {
+        margin-bottom: 5rem;
+    }
+
+    footer .socialmedia {
+        margin-bottom: 1rem;
+    }
+
+    footer#footer .legal ul {
+        flex-flow: column nowrap;
+    }
+}
+}

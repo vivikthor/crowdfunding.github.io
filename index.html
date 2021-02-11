@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PUXL Crowdfunding EN - PUXL A11y Zone A11y</title>
+    <meta
+      name="description"
+      content="The starting point for building a universal and accessible Web."
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/puxl.min.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!--
+  LISTA DE COSAS QUE NO ENTIENDO:
+  - :hover EN ENVIRONMENTAL PROVOCA HOVER EN OTRO LI
+
+
+  LISTA DE COSAS POR HACER:
+  - TODA LA ACCESIBILIDAD
+  - EL FACEBOOK DE IÑIGO
+  - LAS RUTAS DE LOS LINKS DE KICKSTARTER ETC.
+
+
+
+-->
+
+    <a class="jump-link" href="#main__content">Jump to main content</a>
+
+    <div id="app-bar" class="app bar top">
+      <header>
+        <a class="home" href="#hero">
+          <img alt="PUXL" src="img/puxl-logo-black.svg" />
+        </a>
+
+        <button
+          id="app-bar__toggler"
+          class="bar-btn-icn toggler"
+          aria-haspopup="true"
+          aria-controls="app-bar__menu"
+          aria-expanded="true"
+          type="button"
+        >
+          <img alt="MENU" src="img/puxl-icons/menu-burger.svg" aria-hidden="true" />
+          <span>Open navigation menu</span>
+        </button>
+      </header>
+
+      <nav>
+        <div id="app-bar__menu" class="subheading" aria-hidden="false">
+          <ul class="unlisted text--center">
+            <li><a href="#intro">THE PROJECT</a></li>
+            <li><a href="#done">WHAT WE HAVE DONE</a></li>
+            <li><a href="#doing">WHAT WE ARE DOING NOW</a></li>
+            <li><a href="#fund">WHAT WE WANT TO FUND</a></li>
+            <li><a href="#budget">PROJECT BUDGET</a></li>
+            <li><a href="#environment">ENVIRONMENTAL COMMITMENT</a></li>
+            <li><a href="#goals">OUR STRETCH GOALS</a></li>
+            <li><a href="#contributions">DONATION REWARDING</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li>
+              <a href="http://google.es"
+                ><img
+                  src="img/kickstarter.svg"
+                  alt="KICKSTARTER"
+                  title="Go to KICKSTARTER"
+                  class="logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-------------------------// NAVBAR //------------------------->
+    <nav id="navbar" class="pc navbar">
+      <ul class="unlisted">
+        <li><a href="#intro">THE PROJECT</a></li>
+        <li><a href="#done">WHAT WE HAVE DONE</a></li>
+        <li><a href="#doing">WHAT WE ARE DOING NOW</a></li>
+        <li><a href="#fund">WHAT WE WANT TO FUND</a></li>
+        <li><a href="#budget">PROJECT BUDGET</a></li>
+        <li><a href="#environment">ENVIRONMENTAL COMMITMENT</a></li>
+        <li><a href="#goals">OUR STRETCH GOALS</a></li>
+        <li><a href="#contributions">DONATION REWARDING</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li>
+          <a href="http://google.es"
+            ><img
+              src="img/kickstarter.svg"
+              alt="KICKSTARTER"
+              title="Go to KICKSTARTER"
+              class="logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <!-------------------------// /NAVBAR END //------------------------->
+
+    <main id="main__content" role="main">
+      <!-------------------------// HEADER //------------------------->
+      <header id="hero">
+        <div class="grid">
+          <div class="col-xs-12">
+            <img
+              src="img/puxl-logo-white.svg"
+              alt="PUXL Accessibility Logo"
+              title="PUXL Accessibility"
+              class="logo"
+            />
+          </div>
+
+          <h1 class="col-xs-12 text--center" id="main_heading">
+            Are you making <br />Accessible Websites?
+          </h1>
+          <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 video">
+            <div class="responsive-embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/HLUPPDanT6w"
+                title="Crowdfunding PUXL Zone - The Web Accessibility Platform"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <a class="btn round lg cta col-md-8 col-md-offset-2" href=""
+            >Join US IN KICKSTARTER!</a
+          >
+        </div>
+      </header>
+      <!-------------------------// HEADER END //------------------------->
+
+      <!-------------------------// INTRO //------------------------->
+      <section id="intro">
+        <!----- QUOTE here ----->
+        <div class="grid">
+          <blockquote
+            class="col-xs-12 col-md-10 col-md-offset-1"
+            cite="https://www.w3.org/standards/webdesign/accessibility"
+          >
+            <p>
+              The power of the Web is in its universality. Access by
+              <br />everyone regardless of disability is an essential aspect.
+            </p>
+            <footer>
+              <cite>
+                <a href="http://webfoundation.org/about/sir-tim-berners-lee/"
+                  >Tim Berners-Lee</a
+                >,
+                <a href="https://www.w3.org/"
+                  ><abbr title="World Wide Web Consortium">W3C</abbr></a
+                >
+                Director and inventor of the World Wide Web.
+              </cite>
+            </footer>
+          </blockquote>
+        </div>
+        <!----- QUOTE END ----->
+        <!----- INFO ----->
+
+        <div class="grid introtxt">
+          <h2 class="text--center">
+            The internet has to be for everyone. <br />
+            Let us make the Web <br />accessible and universal
+          </h2>
+          <p>
+            We have been working on the development of this project for a year,
+            financing it with our own funds and with entrepreneurship helping
+            programs of the Basque Government.
+          </p>
+          <p>
+            Much of the work has already been done, but we need to continue
+            advancing in the development of the platform as well as in the
+            creation of its contents and its introduction to the market.
+          </p>
+        </div>
+        <!----- INFO END ----->
+        <!----- GRAPH ----->
+        <div class="grid graph">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1236.88 706.4"
+            class="col-xs-12 col-lg-6"
+          >
+            <defs>
+              <style>
+                .a {
+                  fill: #9b8cc4;
+                }
+
+                .b {
+                  fill: #fff;
+                }
+              </style>
+            </defs>
+            <path
+              class="a"
+              d="M2324.37,7710.15A599.64,599.64,0,0,1,2661.19,7813a604.35,604.35,0,0,1,218.29,265.07,598,598,0,0,1,47.13,218.49h-472.1c-7.91-64.78-63.26-115.12-130.14-115.12s-122.23,50.34-130.15,115.12H1722.13a599.28,599.28,0,0,1,102.68-320.82,604.19,604.19,0,0,1,265.07-218.28,598.63,598.63,0,0,1,234.49-47.34m0-16c-341.56,0-618.44,276.88-618.44,618.44h503.32a115.12,115.12,0,1,1,230.24,0h503.32c0-341.56-276.88-618.44-618.44-618.44Z"
+              transform="translate(-1705.93 -7606.19)"
+            />
+            <path
+              class="b"
+              d="M2638.88,7606.19q24.47,10.91,48,23.44l-308.5,581.18c-2.34-1.24-4.72-2.41-7.15-3.49Z"
+              transform="translate(-1705.93 -7606.19)"
+            />
+          </svg>
+          <p class="col-xs-12 col-lg-6">
+            Only the <b>2.2%</b> of Web pages comply with the old
+            <abbr title="Web Content Accessibility Guidelines (WCAG)"
+              >WCAG</abbr
+            >
+            2.0 Web accessibility standard. <br />(source: WebAIM)
+          </p>
+        </div>
+        <!----- GRAPH END ----->
+        <!----- MYTHS ----->
+        <div class="myths grid">
+          <h2 class="text--center">
+            We want to remedy it by eradicating the most deeply
+            <b>rooted myths</b> about Web accessibility:
+          </h2>
+
+          <div class="myth-wrapper">
+            <article class="myth">
+              <p class="text--center">
+                "Web accessibility is not designing compatible, and accessible
+                Web sites are not modern, they are simple and ugly."<span
+                  class="dialog"
+                ></span>
+              </p>
+              <img
+                src="img/puxl-myth-0.svg"
+                alt="A dragon illustration"
+                title="Mythical creature"
+              />
+            </article>
+
+            <article class="myth">
+              <p class="text--center">
+                "Web accessibility has no market."<span class="dialog"></span>
+              </p>
+              <img
+                src="img/puxl-myth-1.svg"
+                alt="A dragon illustration"
+                title="Mythical creature"
+              />
+            </article>
+            <article class="myth">
+              <p class="text--center">
+                "Creating accessible Web sites is very expensive and there are
+                not enough qualified Web accessibility professionals."<span
+                  class="dialog"
+                ></span>
+              </p>
+              <img
+                src="img/puxl-myth-2.svg"
+                alt="A dragon illustration"
+                title="Mythical creature"
+              />
+            </article>
+          </div>
+        </div>
+        <!----- MYTHS END ----->
+        <!----- SECCTION SHAPE ----->
+        <img src="img/puxl-section.svg" alt=""class="shape" />
+      </section>
+      <!-------------------------// WHAT ITS DONE END //------------------------->
+
+      <!-------------------------// WHAT ITS DONE //------------------------->
+      <section id="done">
+        <div class="grid">
+          <h2 class="text--center">What we have already done</h2>
+          <p>
+            In an effort to spread the importancy of Web accessibility we have
+            developed three a11y utilities. We want to change the perspective
+            that most people have about this matter so it is no longer treated
+            as something expensive, unuseful or difficult. The time is now. All
+            our creations are <strong>open-source</strong> and
+            <strong>free to use</strong>, you can find them on GitHub.
+          </p>
+
+          <!-----// PUXL FRAMEWORK //----->
+          <article id="puxl-fw">
+            <span class="bar"></span>
+            <div class="main">
+              <!----- ICONO ----->
+              <img
+                src="img/PUXL-Framework.svg"
+                alt="A dragon illustration"
+                title="Mythical creature"
+              />
+              <div class="pre">
+                <ul class="unlisted h">
+                  <!----- CHECK ----->
+                  <li class="checked"></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <!----- INFO ----->
+                <h3>PUXL <br />Framework</h3>
+                <p>
+                  A front-end library for the modern Web. Create accessible,
+                  responsive Web User Interfaces with lightweight HTML following
+                  the WCAG 2.1 standarts.
+                </p>
+                <p>
+                  Guarantee access to Web content for all the people around the
+                  world without deep knowledge in Web accessibility.
+                </p>
+              </div>
+            </div>
+            <!----- MORE CONTENT ----->
+            <div class="grid development">
+              <ul class="features">
+                <li class="card elevated capsule">
+                  <img src="img/PUXL-FW-1.svg" alt="" />
+                  <p>
+                    Collects and automates the existing theoretical resources.
+                  </p>
+                </li>
+                <li class="card border capsule">
+                  <img src="img/PUXL-FW-2.svg" alt="" />
+                  <p>
+                    <strong>Intuitive</strong> and a practically flat learning
+                    curve.
+                  </p>
+                </li>
+                <li class="card elevated capsule">
+                  <img src="img/PUXL-FW-3.svg" alt="" />
+                  <p>Visual, modular and scalable.</p>
+                </li>
+                <li class="card border capsule">
+                  <img src="img/PUXL-FW-4.svg" alt="" />
+                  <p>
+                    It is <strong>preventive</strong> it detects, alerts and
+                    suggests solutions to coding errors while developing.
+                  </p>
+                </li>
+                <li class="card elevated capsule wcag">
+                  <img src="img/WCAG 2.1 AA.svg" alt="" />
+                  <p>
+                    <strong
+                      >Guaranteed WCAG 2.1 AA accessibility
+                      specification</strong
+                    >
+                  </p>
+                </li>
+                <li class="card elevated capsule">
+                  <img src="img/PUXL-FW-5.svg" alt="" />
+                  <p>
+                    To optimize the resulting code to the point that it
+                    <strong>reduces energy and data cost</strong>.
+                  </p>
+                </li>
+                <li class="card elevated capsule">
+                  <img src="img/PUXL-FW-6.svg" alt="" />
+                  <p>
+                    It guarantees <strong>and equal access</strong> regardless
+                    of our functional capabilities.
+                  </p>
+                </li>
+                <li class="card elevated capsule">
+                  <img src="img/PUXL-FW-7.svg" alt="" />
+                  <p>
+                    <strong>Holistic UX</strong>, focused on the developer, the
+                    customer, the end user and their experience.
+                  </p>
+                </li>
+              </ul>
+
+              <div class="responsive-embed col-xs-12">
+                <iframe
+                  title="DEMO - How does PUXL work.
+        "
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/_uAFJpsKgsY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <button class="btn read" type="button">
+              <span class="deco"
+                ><span class="horizontal"></span><span class="vertical"></span
+              ></span>
+              <p>READ MORE</p>
+            </button>
+          </article>
+          <!-----// PUXL FRAMEWORK END//----->
+          <!-----// PUXL OMNIBUS PRIME //----->
+          <article id="puxl-omnibus">
+            <span class="bar"></span>
+            <div class="main">
+              <!----- ICONO ----->
+              <img
+                src="img/PUXL-Omnibus.svg"
+                alt="Accessible Wordpress illustration"
+                title="Accessible Wordpress"
+              />
+              <div class="pre">
+                <ul class="unlisted h">
+                  <!----- CHECK ----->
+                  <li></li>
+                  <li class="checked"></li>
+                  <li></li>
+                </ul>
+                <!----- INFO ----->
+                <h3>Omnibus<br />Prime</h3>
+                <p>
+                  Omnibus in latin means for all. Prime because is our first
+                  theme for WordPress.
+                </p>
+                <p>
+                  A classic blog starter theme made using PUXL framework
+                  tailor-fitted for WordPress. Have your stories accessible,
+                  WCAG 2.1 AA compliant with zero effort: color-contrasted,
+                  responsive, customizable, human and eco-friendly.
+                </p>
+              </div>
+            </div>
+            <!----- MORE CONTENT ----->
+            <div class="grid development">
+              <img
+                alt="A screenshot of the theme"
+                src="img/omnibus-prime.png"
+                title="Omnibus Prime Theme"
+                class="capsule"
+              />
+            </div>
+            <button class="btn read" type="button">
+              <span class="deco"
+                ><span class="horizontal"></span><span class="vertical"></span
+              ></span>
+              <p>READ MORE</p>
+            </button>
+          </article>
+          <!-----// PUXL OMNIBUS PRIME END//----->
+          <!-----// PUXL ICONS //----->
+          <article id="puxl-icons">
+            <span class="bar"></span>
+            <div class="main">
+              <!----- ICONO ----->
+              <img
+                src="img/PUXL-Icons (2).svg"
+                alt="PUXL Icons Illustrations"
+                title="Icons"
+              />
+              <div class="pre">
+                <ul class="unlisted h">
+                  <!----- CHECK ----->
+                  <li></li>
+                  <li></li>
+                  <li class="checked"></li>
+                </ul>
+                <!----- INFO ----->
+                <h3>PUXL<br />Icons</h3>
+                <p>
+                  An icon library of more than 300 handmade and custom tailored
+                  which features an accessible title and description for each
+                  one of the icons.
+                </p>
+              </div>
+            </div>
+            <!----- MORE CONTENT ----->
+            <div class="grid development">
+              <img
+                alt="A screenshot of some PUXL Icons"
+                src="img/puxl-icons.png"
+                title="Some of the PUXL Icons"
+                class="capsule"
+              />
+            </div>
+            <button class="btn read" type="button">
+              <span class="deco"
+                ><span class="horizontal"></span><span class="vertical"></span
+              ></span>
+              <p>READ MORE</p>
+            </button>
+          </article>
+          <!-----// PUXL ICONS END//----->
+        </div>
+      </section>
+      <!-------------------------// WHAT ITS DONE END //------------------------->
+
+      <!-------------------------// DOING NOW //------------------------->
+
+      <section id="doing">
+        <div class="grid">
+          <h2 class="text--center">What we are doing now</h2>
+          <p>
+            <strong>PUXL Accessibility Zone</strong> is the starting point for
+            making an universal and accessible Web. A space that puts tools
+            available to centralize on a single platform all the effort that is
+            made in Web accessibility worldwide.
+          </p>
+          <p>
+            We want to turn the accessibility into the new standard of web
+            development on a global scale.
+          </p>
+        </div>
+        <!-----// GRID //----->
+        <div class="grid zonemap">
+          <ul>
+            <li class="community">
+              <img src="img/PUXL Community Zone.svg" alt="PUXL Community Zone Logo"/>
+              <span>
+                <h3>COMMUNITY</h3>
+                <p>
+                  A professional network where you can interact with the most
+                  prominent specialists in accessibility and Web development.
+                </p>
+              </span>
+            </li>
+            <li class="border right learn">
+              <img src="img/PUXL Learn Zone.svg" alt="PUXL Learn Zone Zone"/>
+              <span>
+                <h3>LEARN</h3>
+                <p>
+                  A series of courses in webinar and PDF format to acquire at
+                  your pace all the skills necessary for accesssible Web
+                  development using PUXL framework technology.
+                </p>
+              </span>
+            </li>
+            <li class="border blog">
+              <img src="img/PUXL Blog Zone.svg" alt="PUXL Blog Zone Logo"/>
+              <span>
+                <h3>BLOG</h3>
+                <p>
+                  The space where you can consult the articles created by the
+                  community. You can also access the Accessibility First Show
+                  produced by the PUXL clan where we talk about Web
+                  accessibility and interview the best specialists in the world.
+                </p>
+              </span>
+            </li>
+            <li class="right store">
+              <img src="img/PUXL Store Zone.svg" alt="PUXL Store Zone Logo"/>
+              <span>
+                <h3>STORE</h3>
+                <p>
+                  Market of accessible themes and web templates, created with
+                  PUXL technology for the most relevant development frameworks
+                  and CMS on the market (WordPress, Drupal, Joomla …), as well
+                  as dedicated websites. It will also be the place where you can
+                  buy merchandise such as T-shirts, mugs…
+                </p>
+              </span>
+            </li>
+          </ul>
+          <img
+            src="img/PUXL A11y Zone.svg"
+            class="logo"
+            title="PUXL A11yZone Logo"
+            alt="PUXL A11yZone Logo"
+          />
+        </div>
+        <!-----// GRID END//----->
+        <!-----// VIDEO //----->
+        <div
+          class="col-xs-12 col-md-10 col-md-offset-1 col-xl-6 col-xl-offset-3 video"
+        >
+          <div class="responsive-embed">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/0XefL7GASVQ"
+              title="Crowdfunding PUXL Zone - PUXL A11y Zone Prototype"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <!-----// VIDEO END//----->
+      </section>
+
+      <!-------------------------// DOING NOW END //------------------------->
+
+      <!-------------------------// WANT TO FUND//------------------------->
+      <section id="fund">
+        <h2 class="text--center">What we want to fund</h2>
+        <!-----// FUND LIST //----->
+        <div class="grid">
+            <ul class="col-xs-12 unlisted">
+              <li>
+                <img src="img/PUXL Fund 1.svg" alt=""/>
+                <p>Market introduction campaign and events.</p>
+              </li>
+              <li>
+                <img src="img/PUXL Fund 2.svg" alt=""/>
+                <p>Accessible Web development courses.</p>
+              </li>
+              <li>
+                <img src="img/PUXL Fund 3.svg" alt=""/>
+                <p>PUXL Zone community content creation.</p>
+              </li>
+              <li>
+                <img src="img/PUXL Fund 4.svg" alt=""/>
+                <p>Finish the PUXL Accessibility Zone platform development.</p>
+              </li>
+              <li>
+                <img src="img/PUXL Fund 5.svg" alt=""/>
+                <p>Accessible Themes creation.</p>
+              </li>
+              <li>
+                <img src="img/PUXL Fund 6.svg" alt=""/>
+                <p>Certify the accessibility of PUXL Framework Premium</p>
+              </li>
+            </ul>
+        </div>
+        <!-----// FUND LIST END//----->
+
+        <!-----// PUXL EASEY CODING //----->
+        <div id="puxl-easy-coding" class="grid">
+          <img src="img/puxl-section1.svg" alt=""class="shape" />
+          <img
+            src="img/PUXL-Easy Coding Deco1.svg"
+            class="link-img"
+            alt=""
+          />
+          <span class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-2"
+            ><img src="img/PUXL-Easy Coding.svg" alt=""/><img
+              src="img/PUXL-Easy Coding Deco.svg"
+              alt=""
+              class="deco"
+          /></span>
+
+          <article class="col-xs-12 col-md-12 col-lg-5 col-lg-offset-1">
+            <h3 class="text--center">PUXL Easy <br />Coding</h3>
+            <p>
+              A visual and intuitive, modern and accessible visual website
+              builder. With a powerful collaborative code editor, git-based
+              version control and an open and collaborative user community. All
+              based on the PUXL Framework technology.
+            </p>
+          </article>
+        </div>
+        <!-----// PUXL EASY CODING END//----->
+      </section>
+
+      <!-------------------------// WANT TO FUND END//------------------------->
+
+      <!-------------------------// BUDGET //------------------------->
+      <section id="budget" class="accord">
+        <button class="btn read color-puxl" type="button">
+          <span class="deco"
+            ><span class="horizontal"></span><span class="vertical"></span
+          ></span>
+          <p>PROJECT BUDGET</p>
+        </button>
+        <div class="grid development">
+          <h2 class="text--center">Project Budget</h2>
+          <!----- GRAPH ----->
+          <svg
+            id="budget-graph"
+            data-name="budget"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1240.51 622.25"
+            class="col-xs-12 graph"
+          >
+            <defs>
+              <style>
+                #making path {
+                  fill: none;
+                  stroke: white;
+                  stroke-width: 4px;
+                }
+
+                .cls-1,
+                .cls-3 {
+                  fill: none;
+                }
+
+                .cls-1,
+                .cls-2,
+                .cls-3 {
+                  stroke: white;
+                  stroke-width: 4px;
+                }
+
+                .cls-1,
+                .cls-2 {
+                  stroke-miterlimit: 10;
+                }
+
+                .cls-2 {
+                  fill: white;
+                }
+
+                #funding *{
+                  fill: white;
+                }
+
+                .cls-3 {
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                }
+              </style>
+            </defs>
+            <path
+              class="outline"
+              d="M505.05,620.25a115.2,115.2,0,0,1,230.4,0"
+            />
+            <path
+              class="outline"
+              d="M2,620.25C2,278.8,278.8,2,620.25,2s618.26,276.8,618.26,618.25"
+            />
+            <g id="funding">
+              <path
+              class="cls-2"
+              d="M1234.87,552.8a626.07,626.07,0,0,1,3.64,67.45H735.45a118.71,118.71,0,0,0-.67-12.57Z"
+            />
+            </g>
+            <g id="making">
+              <path d="M472.33,19.81C202.31,86.11,2,329.79,2,620.25H505.05a115.25,115.25,0,0,1,87.64-111.88Z"/>
+              <path d="M592.69,508.37,472.33,19.81" />
+              <path d="M555.25,527.43,432.3,31.1" />
+              <path d="M520.88,559.71,393.82,44.78" />
+              <path d="M493.49,620.25,355.58,61.36" />
+              <path d="M451.16,620.25,318,80.78" />
+              <path d="M408.83,620.25,281.23,103.16" />
+              <path d="M366.49,620.25,245.2,128.72" />
+              <path d="M324.16,620.25,210.54,159.82" />
+              <path d="M281.83,620.25,176.19,192.16" />
+              <path d="M239.49,620.25,142.62,227.67" />
+              <path d="M197.16,620.25,110.73,270" />
+              <path d="M154.83,620.25,80.75,320" />
+              <path d="M112.5,620.25,52.19,375.86" />
+              <path d="M69.34,620.25,26.18,444.37" />
+              <path d="M26.18,620.25,6.93,541.82" />
+            </g>
+            <g id="other">
+            <path
+              class="cls-1"
+              d="M1234.87,552.8a616.2,616.2,0,0,0-168.55-360.64L701.71,538.79a114.86,114.86,0,0,1,33.07,68.89Z"
+            />
+            <circle class="cls-1" cx="1057.97" cy="229.3" r="18.17" />
+            <circle class="cls-1" cx="982.04" cy="305.23" r="18.17" />
+            <circle class="cls-1" cx="1057.97" cy="305.23" r="18.17" />
+            <path class="cls-1" d="M1152.08,305.23a18.16,18.16,0,1,1-9.57-16" />
+            <circle class="cls-1" cx="906.11" cy="381.16" r="18.17" />
+            <circle class="cls-1" cx="982.04" cy="381.16" r="18.17" />
+            <circle class="cls-1" cx="1057.97" cy="381.16" r="18.17" />
+            <circle class="cls-1" cx="1133.91" cy="381.16" r="18.17" />
+            <circle class="cls-1" cx="830.18" cy="457.1" r="18.17" />
+            <circle class="cls-1" cx="906.11" cy="457.1" r="18.17" />
+            <circle class="cls-1" cx="982.04" cy="457.1" r="18.17" />
+            <circle class="cls-1" cx="1057.97" cy="457.1" r="18.17" />
+            <circle class="cls-1" cx="1133.91" cy="457.1" r="18.17" />
+            <path
+              class="cls-1"
+              d="M1220.56,471.77a18.18,18.18,0,1,1-10.72-32.85c.55,0,1.1,0,1.64.08"
+            />
+            <circle class="cls-1" cx="754.25" cy="533.03" r="18.17" />
+            <circle class="cls-1" cx="830.18" cy="533.03" r="18.17" />
+            <circle class="cls-1" cx="906.11" cy="533.03" r="18.17" />
+            <circle class="cls-1" cx="982.04" cy="533.03" r="18.17" />
+            <circle class="cls-1" cx="1057.97" cy="533.03" r="18.17" />
+            <circle class="cls-1" cx="1133.91" cy="533.03" r="18.17" />
+            <circle class="cls-1" cx="1209.84" cy="533.03" r="18.17" />
+            <path class="cls-1" d="M736.12,607.68a18.18,18.18,0,0,1,35.51-4" />
+            <path class="cls-1" d="M815.06,598.87a18.19,18.19,0,0,1,27.69-3" />
+          </g>
+            <g id="taxes">
+            <path
+              class="cls-1"
+              d="M472.33,19.81A619.51,619.51,0,0,1,620.25,2c175.3,0,333.56,73,446.07,190.16L701.71,538.79a115.4,115.4,0,0,0-109-30.42Z"
+            />
+            <line class="cls-3" x1="520.76" y1="43.6" x2="546.12" y2="58.61" />
+            <line class="cls-3" x1="606.66" y1="81.89" x2="630.98" y2="63.26" />
+            <line
+              class="cls-3"
+              x1="678.07"
+              y1="77.75"
+              x2="671.34"
+              y2="105.18"
+            />
+            <line class="cls-3" x1="737.06" y1="47.22" x2="723.6" y2="77.75" />
+            <line
+              class="cls-3"
+              x1="861.24"
+              y1="80.34"
+              x2="844.68"
+              y2="105.69"
+            />
+            <line
+              class="cls-3"
+              x1="884.01"
+              y1="128.98"
+              x2="910.4"
+              y2="143.98"
+            />
+            <line
+              class="cls-3"
+              x1="930.06"
+              y1="200.9"
+              x2="903.16"
+              y2="220.57"
+            />
+            <line
+              class="cls-3"
+              x1="973.53"
+              y1="217.46"
+              x2="966.8"
+              y2="245.92"
+            />
+            <line
+              class="cls-3"
+              x1="852.96"
+              y1="311.64"
+              x2="884.53"
+              y2="314.22"
+            />
+            <line
+              class="cls-3"
+              x1="728.26"
+              y1="451.35"
+              x2="760.34"
+              y2="444.62"
+            />
+            <line
+              class="cls-3"
+              x1="606.66"
+              y1="362.35"
+              x2="630.98"
+              y2="340.1"
+            />
+            <line
+              class="cls-3"
+              x1="669.79"
+              y1="238.16"
+              x2="695.14"
+              y2="217.98"
+            />
+            <line
+              class="cls-3"
+              x1="730.33"
+              y1="256.79"
+              x2="762.41"
+              y2="266.1"
+            />
+            <line
+              class="cls-3"
+              x1="815.19"
+              y1="261.44"
+              x2="847.1"
+              y2="268.69"
+            />
+            <line
+              class="cls-3"
+              x1="817.78"
+              y1="181.24"
+              x2="843.65"
+              y2="198.83"
+            />
+            <line
+              class="cls-3"
+              x1="725.67"
+              y1="173.48"
+              x2="762.93"
+              y2="165.72"
+            />
+            <line
+              class="cls-3"
+              x1="557.5"
+              y1="173.48"
+              x2="585.96"
+              y2="175.55"
+            />
+            <line
+              class="cls-3"
+              x1="519.21"
+              y1="121.22"
+              x2="551.29"
+              y2="130.01"
+            />
+            <line
+              class="cls-3"
+              x1="566.3"
+              y1="221.08"
+              x2="548.19"
+              y2="245.92"
+            />
+            <line class="cls-3" x1="587" y1="268.69" x2="612.35" y2="283.18" />
+            <line
+              class="cls-3"
+              x1="734.47"
+              y1="326.12"
+              x2="725.67"
+              y2="355.62"
+            />
+            <line
+              class="cls-3"
+              x1="784.14"
+              y1="358.21"
+              x2="821.92"
+              y2="351.22"
+            />
+            <line
+              class="cls-3"
+              x1="678.07"
+              y1="357.69"
+              x2="674.7"
+              y2="385.63"
+            />
+          </g>
+          </svg>
+          <!----- GRAPH END ----->
+          <h2 class="text--center total">86.263€</h2>
+          <!----- ABOUT----->
+          <ul id="budget-legend" class="col-xs-12">
+            <!----- MAKING ----->
+            <li id="list-item-making" class="making">
+              <svg
+                data-name="Making"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128.29 55.54"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #f7f7f7;
+                      stroke-miterlimit: 10;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <rect class="cls-1" x="2" y="2" width="124.29" height="51.54" />
+                <line class="cls-1" x1="8.61" y1="2" x2="28.31" y2="53.54" />
+                <line class="cls-1" x1="31.99" y1="2" x2="51.69" y2="53.54" />
+                <line class="cls-1" x1="55.36" y1="2" x2="75.07" y2="53.54" />
+                <line class="cls-1" x1="78.74" y1="2" x2="98.45" y2="53.54" />
+                <line
+                  class="cls-1"
+                  x1="102.12"
+                  y1="2"
+                  x2="121.82"
+                  y2="53.54"
+                /></svg><span>
+                <p>MAKING</p>
+                <p>36.500€</p>
+              </span>
+            </li>
+            <!----- TAXES ----->
+            <li id="list-item-taxes" class="taxes">
+              <svg
+                data-name="Taxes"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128.29 55.54"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #f7f7f7;
+                      stroke-miterlimit: 10;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <rect class="cls-1" x="2" y="2" width="124.29" height="51.54" />
+                <line
+                  class="cls-1"
+                  x1="16.02"
+                  y1="29.62"
+                  x2="26.82"
+                  y2="13.32"
+                />
+                <line
+                  class="cls-1"
+                  x1="51.01"
+                  y1="19.77"
+                  x2="60.36"
+                  y2="37.2"
+                />
+                <line
+                  class="cls-1"
+                  x1="84.61"
+                  y1="39.85"
+                  x2="103.94"
+                  y2="39.09"
+                />
+                <line
+                  class="cls-1"
+                  x1="83.47"
+                  y1="16.36"
+                  x2="101.48"
+                  y2="24.69"
+                /></svg><span>
+                <p>TAXES & FEES</p>
+                <p>28763€</p>
+              </span>
+            </li>
+            <!----- OTHER ----->
+            <li id="list-item-other" class="other">
+              <svg
+                data-name="Other"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128.29 55.54"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #f7f7f7;
+                      stroke-miterlimit: 10;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <rect class="cls-1" x="2" y="2" width="124.29" height="51.54" />
+                <circle class="cls-1" cx="26.82" cy="27.77" r="13.14" />
+                <circle class="cls-1" cx="64.15" cy="27.77" r="13.14" />
+                <circle class="cls-1" cx="101.48" cy="27.77" r="13.14" />
+              </svg>
+              <span>
+                <p>MULTIPLE/OTHER</p>
+                <p>18000€</p>
+              </span>
+            </li>
+            <!----- FUNDING ----->
+            <li id="list-item-funding" class="funding">
+              <svg
+                data-name="funding"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128.29 55.54"
+                class="funding"
+              >
+                <defs>
+                  <style>
+                    rect {
+                      fill: #f7f7f7;
+                      stroke: #f7f7f7;
+                      stroke-miterlimit: 10;
+                      stroke-width: 4px;
+                    }
+                  </style>
+                </defs>
+                <rect x="2" y="2" width="124.29" height="51.54" /></svg><span>
+                <p>FUNDING</p>
+                <p>3.000€</p>
+              </span>
+            </li>
+          </ul>
+          <!----- ABOUT END ----->
+          <!----- GRAPH INFO END ----->
+          <div class="exp">
+            <h3>Why 30.000€?</h3>
+            <p>
+              The real capital need that we have to achieve our objectives is €
+              86,263, which includes the personnel hiring expenses that will
+              help us accelerate the
+              <strong>PUXL Accessibility Zone</strong> development process. The
+              decision to lower our collection target to 30,000 euros is because
+              we know that even with the small team we are we will be able to
+              carry out our product, albeit at a much lower speed. We have
+              decided to make the possibility of reaching 100% of our budget an
+              extended objective, giving this objective as a reward, the
+              extension to
+              <b>double the premium subscription periods</b> offered as a
+              reward. We have complete confidence in our product and we believe
+              that this is a good way to convey that confidence to you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-------------------------// BUDGET END //------------------------->
+
+      <!-------------------------// ENVIRONMENT //------------------------->
+
+      <section id="environment" class="accord">
+        <button class="btn read" type="button">
+          <span class="deco"
+            ><span class="horizontal"></span><span class="vertical"></span
+          ></span>
+          <p>ENVIRONMENTAL COMMITMENT</p>
+        </button>
+        <div class="grid development">
+          <p class="col-xs-12 col-md-10 col-md-offset-1">
+            Ecological software. PUXL can have a big social impact beyond Web
+            accessibility; a clear environmental impact. PUXL framework was
+            created with the target to help developers create accessible,
+            modern, robust and optimized web interfaces.
+          </p>
+          <p class="col-xs-12 col-md-10 col-md-offset-1">
+            As a result of our techniques, both server-sided and client-side
+            devices experience less consumption of resources on the loading
+            speed of the Web, which meand less energetic impact made by these
+            machines.
+          </p>
+
+          <img
+            src="img/environmental-commitment.svg"
+            alt=""
+            title="Green Server"
+            class="col-xs-12 col-md-6 col-md-offset-3"
+          />
+
+          <p class="col-xs-12 col-md-10 col-md-offset-1">
+            In addition to this, one of the PUXL framework premises is to
+            guarantee that the Web developed is accessible in low favorable
+            conditions, that is to say, with low-speed Internet connections of
+            and/or with low hardware resources devices. A Web page made with
+            PUXL framework would have more probabilities of being loaded
+            correctly that any other Web page developed with other technologies.
+            We realized that if we can keep using our devices for long we will
+            not be needing a more powerful one, reducing the
+            <strong>electronic waste</strong>.
+          </p>
+          <p class="col-xs-12 col-md-10 col-md-offset-1">
+            In the day this article was written, according to information from
+            Internet Live Stats, 54,6% of the world population, which means more
+            than 4,5 billion people are Internet users, and they are surfing
+            along with more than 1,7 billion active Web pages.
+          </p>
+          <p class="col-xs-12 col-md-10 col-md-offset-1">
+            According to the Clicking Clean report of Greenpeace of 2017, about
+            7% of the planet energy consumption derives from the energy demand
+            associated with what some call "digital capitalism"; the
+            above-mentioned number has increased since the publication of this
+            study, and it is believed that it will achieve 14% in 2040.
+          </p>
+          <p class="col-xs-12 col-md-10 col-md-offset-1">
+            Can you imagine that if we will cause an average 10% positive impact
+            as minimally on the environmental trace produced by the digital age?
+          </p>
+        </div>
+      </section>
+
+      <!-------------------------// ENVIRONMENT END //------------------------->
+
+      <!-------------------------// STRETCH GOALS //------------------------->
+
+      <section id="goals" class="accord">
+        <button class="btn read" type="button">
+          <span class="deco"
+            ><span class="horizontal"></span><span class="vertical"></span
+          ></span>
+          <p>STRETCH GOALS</p>
+        </button>
+        <div class="grid development">
+
+          <p class="col-xs-12 note text--center">This is a text-only representation in order to be accesible to anyone, but we made a beautiful infographic about this.<br><a href="#">Watch it here!</a></p>
+
+          <article class="goal card card-inverted col-xs-12 col-md-4">
+            <span
+              ><p>1.</p>
+              <p>Campaign Objective</p></span
+            >
+            <span><p>30.000€</p></span>
+            <p>
+              The delivery of all rewards established for this milestone is
+              activated
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>2.</p>
+              <p>New PUXL icons manager.</p></span
+            >
+            <span><p>45.000€</p></span>
+            <p>Exhibit the PUXL icons collection in a renewed interface.</p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>3.</p>
+              <p>100% budget = Double subscription period</p></span
+            >
+            <span><p>86.263€</p></span>
+            <p>
+              Upon reaching this milestone, the premium subscription periods
+              offered as a reward are doubled.
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>4.</p>
+              <p>Social login & IndieWeb</p></span
+            >
+            <span><p>101.263 €</p></span>
+            <p>
+              Use your social media accounts to register or log into PUXL
+              Accessibility Zone. IndieWeb compatibility.
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>5.</p>
+              <p>Design tokens</p></span
+            >
+            <span><p>121.263 €</p></span>
+            <p>
+              Design decisions in a format compatible with diverse applications.
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>6.</p>
+              <p>English and Spanish documentation</p></span
+            >
+            <span><p>151.263 €</p></span>
+            <p>
+              We will complete all the documentation for the PUXL framework in
+              English and Spanish, and we will also add Spanish as a new
+              language in PUXL Accessibility Zone.
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>7.</p>
+              <p>Accessible web development course</p></span
+            >
+            <span><p>181.263 €</p></span>
+            <p>
+              We will add to your rewards a complete training from beginner to
+              expert in accessible Web development (HTML, CSS and JS) with PUXL
+              framework as a base.
+            </p>
+          </article>
+
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>8.</p>
+              <p>Omnibus Prime theme for Drupal</p></span
+            >
+            <span><p>200.000€</p></span>
+            <p>
+              We will develop & add to your rewards a Premium license of Omnibus
+              Prime theme for Drupal.
+            </p>
+          </article>
+
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>9.</p>
+              <p>Omnibus Prime theme for WordPress</p></span
+            >
+            <span><p>200.000€</p></span>
+            <p>
+              We will add to your rewards a Premium license of our Omnibus Prime
+              theme for WordPress.
+            </p>
+          </article>
+
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>10.</p>
+              <p>PUXL Icons Premium Pack</p></span
+            >
+            <span><p>250.000€</p></span>
+            <p>Accessible & Customizable SVG icons pack.</p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>11.</p>
+              <p>Online theme builder for Drupal and Wordpress</p></span
+            >
+            <span><p>350.000€</p></span>
+            <p>
+              We will add to PUXL Accessibility Zone a free online creation
+              service for accessible starter themes for WordPress and Drupal.
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>12.</p>
+              <p>Double subscription periods</p></span
+            >
+            <span><p>400.000€</p></span>
+            <p>
+              Upon reaching this milestone, the premium subscription periods
+              offered as a reward will be doubled AGAIN!
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>13.</p>
+              <p>Google Chrome Plugin</p></span
+            >
+            <span><p>450.000€</p></span>
+            <p>Accessibility plugin for Chrome browser</p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>14.</p>
+              <p>Firefox Plugin</p></span
+            >
+            <span><p>500.000€</p></span>
+            <p>Accessibility plugin for Firefox browser</p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>15.</p>
+              <p>Gutenberg Accessible blocks</p></span
+            >
+            <span><p>550.000€</p></span>
+            <p>
+              Plugin to add accessible blocks to the Wordpress Gutenberg editor.
+            </p>
+          </article>
+
+          <article class="goal card card-inverted col-xs-12 col-md-4">
+            <span
+              ><p>16.</p>
+              <p>PUXL Work Zone</p></span
+            >
+            <span><p>600.000€</p></span>
+            <p>
+              We will add the Work Zone to PUXL Accessibility Zone (available
+              only for premium users) An exclusive freelance job marketplace for
+              A11y Web developers.
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>17.</p>
+              <p>PUXL Fest Camp</p></span
+            >
+            <span><p>650.000€</p></span>
+            <p>
+              We will organize our first international off/online event 100%
+              dedicated to accessibility and web technologies, and we will add
+              two entries to your rewards, we will also include you as
+              crowdsponsor of the event.
+            </p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>18.</p>
+              <p>Accessible block editing module for Drupal</p></span
+            >
+            <span><p>700.000€</p></span>
+            <p>Module to add Gutenberg blocks accessible to Drupal.</p>
+          </article>
+          <article class="goal card col-xs-12 col-md-4">
+            <span
+              ><p>19.</p>
+              <p>PUXL Easy Coding beta</p></span
+            >
+            <span><p>800.000€</p></span>
+            <p>
+              We will release the first version and give you exclusive access to
+              the fully functional beta of our new accessible web builder. And
+              we will give totally free access to educational institutions and
+              non-profit organizations
+            </p>
+          </article>
+          <article class="goal card card-inverted col-xs-12 col-md-4">
+            <span
+              ><p></p>
+              <p>SURPRISE</p></span
+            >
+            <span><p>850.000€</p></span>
+            <p></p>
+          </article>
+          <article class="goal card card-inverted col-xs-12 col-md-4">
+            <span
+              ><p></p>
+              <p>SURPRISE</p></span
+            >
+            <span><p>900.000€</p></span>
+            <p></p>
+          </article>
+        </div>
+      </section>
+
+      <!-------------------------// STRETCH GOALS END //------------------------->
+      <!-------------------------// DONATION //------------------------->
+
+      <section id="contributions">
+        <div class="grid message">
+          <p>Well, this is our target:</p>
+          <p>will you help us to obtain it?</p>
+        </div>
+
+        <!----- TABS ----->
+        <div class="grid tab-wrapper">
+          <div class="tabs col-xs-12" aria-label="Tabs 1 label" id="tabs--1">
+            <!----- TAB HEADINGS ----->
+            <div role="tablist">
+              <!----- BRONZE HEADING ----->
+              <button
+                class="tab-icn-txt v"
+                role="tab"
+                id="tabs--1__tab--1"
+                aria-controls="tabs--1__tabpanel--1"
+                aria-selected="false"
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  id="bronze"
+                  data-name="bronze"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 450.5 460.9"
+                >
+                  <defs>
+                    <style>
+                      .svg-bronze {
+                        fill: url(#Puxl-gradient);
+                      }
+                    </style>
+                    <linearGradient
+                      id="Puxl-gradient"
+                      x1="353.75"
+                      y1="784.26"
+                      x2="353.75"
+                      y2="415.15"
+                      gradientTransform="translate(0 -327.89)"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#fff" />
+                      <stop offset="1" stop-color="#8e68a4" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    class="svg-bronze"
+                    d="M457.6,198.7c0,90-69.3,149.5-165.3,231.8l-21,18c-4.9,4.2-12.1,7.3-16.9,3.1v-3.1a13,13,0,0,1-4.5-9.8V132.1a13.37,13.37,0,0,1,3.8-9.2h0c18.2-18.2,47.5-42.3,92.5-42.3C410.7,80.7,457.6,130.3,457.6,198.7Z"
+                    transform="translate(-19.2 -27.1)"
+                  />
+                  <path
+                    d="M53.9,61.8H19.2V27.1H53.9Zm55.3-34.7H74.5V61.8h34.7Zm149.2,448V488H21.3V475.1Z"
+                    transform="translate(-19.2 -27.1)"
+                  />
+                  <path
+                    d="M71.7,274.6a8,8,0,0,0-8-8H44.1a8,8,0,0,0,0,16H63.8A8,8,0,0,0,71.7,274.6Z"
+                    transform="translate(-19.2 -27.1)"
+                  />
+                  <path
+                    d="M259.5,470.9a7.78,7.78,0,0,1-5.2-1.9l-30.5-26.3C122.6,355.9,49.4,293.2,49.4,196.1c0-36.4,12.4-69.5,34.9-93.4s54.1-37.1,88.8-37.1c20.1,0,38.3,4,55.6,12.4a8,8,0,0,1-7,14.4c-15.1-7.3-31-10.8-48.7-10.8-62.4,0-107.7,48.2-107.7,114.5,0,89.8,70.8,150.5,168.8,234.5l25.3,21.8,25.3-21.8c98-84.1,168.8-144.8,168.8-234.5,0-66.4-45.3-114.5-107.6-114.5-43.7,0-72.5,23.7-90.3,41.6l-9.9,9.9a8,8,0,0,1-11.3-11.3l9.9-9.9C264.1,92,296.3,65.6,346,65.6c34.6,0,66.2,13.2,88.8,37.1s34.9,57,34.9,93.4c0,97.1-73.1,159.8-174.3,246.7L264.8,469A8,8,0,0,1,259.5,470.9Z"
+                    transform="translate(-19.2 -27.1)"
+                  />
+                </svg>
+                <span>BRONZE</span>
+              </button>
+              <!----- BRONZE HEADING END ----->
+              <!----- SILVER HEADING ----->
+              <button
+                class="tab-icn-txt v"
+                role="tab"
+                id="tabs--1__tab--2"
+                aria-controls="tabs--1__tabpanel--2"
+                aria-selected="false"
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  id="silver"
+                  data-name="silver"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 410.3 412.3"
+                >
+                  <defs>
+                    <style>
+                      .svg-silver {
+                        fill: url(#Puxl-gradient);
+                      }
+                      .cls-2 {
+                        fill: #8e68a4;
+                      }
+                    </style>
+                    <linearGradient
+                      x1="345.51"
+                      y1="711.23"
+                      x2="347.79"
+                      y2="395.21"
+                      gradientTransform="translate(0 -315.89)"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#fff" />
+                      <stop offset="1" stop-color="#8e68a4" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    class="svg-silver"
+                    d="M425.8,377.6a90,90,0,0,1-124.4,27c-17.8-11.5-30.8-25.1-39.6-41.7l-7.3-13.7a6.65,6.65,0,0,1-.9-3.4V80.1a7.19,7.19,0,0,1,6.6-7.2c2.2-.2,4.5-.3,6.8-.3a93.29,93.29,0,0,1,93.2,93.2,123.58,123.58,0,0,1-14.3,58.6h0a7.22,7.22,0,0,0,5.1,10.5c17.9,3.2,34,9.2,47.9,18.2a90.11,90.11,0,0,1,26.9,124.5Z"
+                    transform="translate(-37.3 -64.7)"
+                  />
+                  <path
+                    d="M185.5,424.2a97.3,97.3,0,0,1-52.7-179.1,137,137,0,0,1,49.3-19,131,131,0,0,1-14.7-60.9,100.5,100.5,0,0,1,201,0,8,8,0,0,1-16,0,84.5,84.5,0,0,0-169,0,114.9,114.9,0,0,0,13.3,54.4l4.8,9a8,8,0,0,1-6.2,11.7c-20.6,2.3-38.7,8.5-53.9,18.2A81.23,81.23,0,0,0,224.5,398a8,8,0,1,1,7.7,14.1A98.48,98.48,0,0,1,185.5,424.2ZM341.9,469V442.6a8,8,0,0,0-8-8H289.1V402.7c2.7,2.1,5.6,4.1,8.6,6A97.25,97.25,0,0,0,402.9,245.1a137,137,0,0,0-49.3-19,122.53,122.53,0,0,0,8.6-20.9,8,8,0,0,0-15.2-4.8,118.57,118.57,0,0,1-8,19.1l-4.8,9a8,8,0,0,0,6.2,11.7c20.6,2.3,38.7,8.5,53.9,18.2a81.37,81.37,0,0,1-88,136.9,116.35,116.35,0,0,1-19.6-15.7,7.83,7.83,0,0,0-8.7-1.7,8,8,0,0,0-4.9,7.4v57.4a8,8,0,0,0,8,8h44.8V461H209.8V450.6h44.8a8,8,0,0,0,8-8v-57a8,8,0,0,0-16,0v49H201.8a8,8,0,0,0-8,8V469a8,8,0,0,0,8,8H333.9A8,8,0,0,0,341.9,469Z"
+                    transform="translate(-37.3 -64.7)"
+                  />
+                  <path
+                    d="M375.3,210.8H301.5a8,8,0,0,1,0-16h73.8a8,8,0,0,1,0,16Zm39.5-44.7a8,8,0,0,0-8-8H343.7a8,8,0,0,0,0,16h63.1A8,8,0,0,0,414.8,166.1Z"
+                    transform="translate(-37.3 -64.7)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M37.3,119.6l57.8,57.8L37.3,235.2Z"
+                    transform="translate(-37.3 -64.7)"
+                  />
+                </svg>
+                <span>SILVER</span>
+              </button>
+              <!----- SILVER HEADING END ----->
+              <!----- GOLD HEADING ----->
+              <button
+                class="tab-icn-txt v"
+                role="tab"
+                id="tabs--1__tab--3"
+                aria-controls="tabs--1__tabpanel--3"
+                aria-selected="false"
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  id="gold"
+                  data-name="gold"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 454.1 456.9"
+                >
+                  <defs>
+                    <style>
+                      .svg-gold {
+                        fill: url(#Puxl-gradient);
+                      }
+                      .cls-2 {
+                        fill: #8e68a4;
+                      }
+                    </style>
+                    <linearGradient
+                      x1="349.44"
+                      y1="728.51"
+                      x2="338.07"
+                      y2="442.02"
+                      gradientTransform="translate(0 -327.89)"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#fff" />
+                      <stop offset="1" stop-color="#8e68a4" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    class="svg-gold"
+                    d="M438.1,314.8c0,59.7-41,103.1-97.4,103.1-30.3,0-55.2-11.4-80.6-36.8l-3.8-3.8V81.7c1.1-1.2,2.2-2.4,3.3-3.7l9.7-10.8L279,78c21,23.4,40,43.7,56.9,61.5C401.8,209.7,438.1,248.3,438.1,314.8Z"
+                    transform="translate(-34.8 -21.8)"
+                  />
+                  <path
+                    d="M197.8,425.9c-29.5,0-56.4-11.2-75.7-31.7-19.2-20.3-29.7-48.5-29.7-79.5a166.56,166.56,0,0,1,1.2-20.3A152.81,152.81,0,0,1,98.5,270a8.08,8.08,0,0,1,9.9-5.5,7.94,7.94,0,0,1,5.4,9.9,129.52,129.52,0,0,0-4.4,21.8,157.25,157.25,0,0,0-1.1,18.5c0,55.1,37.6,95.1,89.4,95.1a96.58,96.58,0,0,0,30-4.7,8,8,0,0,1,5,15.2A106.37,106.37,0,0,1,197.8,425.9Zm144.4,44v-26a8,8,0,0,0-8-8h-44v-22a108.38,108.38,0,0,0,50.5,12c29.5,0,56.4-11.2,75.7-31.7,19.2-20.3,29.7-48.5,29.7-79.5,0-33.1-8.5-61-27.7-90.6-17.7-27.3-43.8-55.1-76.8-90.2-15.8-16.8-35.5-37.7-56.7-61.4l-9.7-10.8a8,8,0,0,0-6-2.7h0a8.2,8.2,0,0,0-6,2.7l-9.7,10.8c-20.9,23.3-39.9,43.5-56.6,61.3l-.1.1c-38.1,40.5-65.7,69.8-83.3,100.8a8,8,0,1,0,13.9,7.9c16.7-29.3,43.7-58,81-97.8l.1-.1c16.8-17.9,35.9-38.1,56.9-61.6l3.7-4.1,3.7,4.1c21.3,23.8,41.1,44.8,57,61.7C394.4,213.5,430,251.3,430,314.6c0,55.1-37.6,95.1-89.4,95.1a93.41,93.41,0,0,1-54-16.7,8,8,0,0,0-12.5,6.6v44a8,8,0,0,0,8,8h44v10H212.3v-10h44a8,8,0,0,0,8-8v-52a8,8,0,0,0-16,0v44h-44a8,8,0,0,0-8,8v26a8,8,0,0,0,8,8H334.2A7.59,7.59,0,0,0,342.2,469.9Z"
+                    transform="translate(-34.8 -21.8)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M467.1,98.7h21.8v56.9H467.1ZM356.9,21.9V43.7h56.9V21.9Zm75.1,0V43.7h35.1V80.6h21.8V21.8H432ZM34.8,396.9v81.8h81.8Z"
+                    transform="translate(-34.8 -21.8)"
+                  />
+                  <path
+                    d="M163.6,242.6a8,8,0,0,0-8-8h-78a8,8,0,0,0,0,16h78A8,8,0,0,0,163.6,242.6Zm-34.1,29.7a8,8,0,0,0-8-8h-78a8,8,0,0,0,0,16h78A8,8,0,0,0,129.5,272.3Z"
+                    transform="translate(-34.8 -21.8)"
+                  />
+                </svg>
+                <span>GOLD</span>
+              </button>
+              <!----- GOLD HEADING END ----->
+              <!----- DIAMOND HEADING ----->
+              <button
+                class="tab-icn-txt v"
+                role="tab"
+                id="tabs--1__tab--4"
+                aria-controls="tabs--1__tabpanel--4"
+                aria-selected="false"
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  id="diamond"
+                  data-name="diamond"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 484.9 479.4"
+                >
+                  <defs>
+                    <style>
+                      .svg-diamond {
+                        fill: url(#Puxl-gradient);
+                      }
+                      .cls-2 {
+                        fill: #8e68a4;
+                      }
+                    </style>
+                    <linearGradient
+                      x1="323.88"
+                      y1="768.35"
+                      x2="326"
+                      y2="418.81"
+                      gradientTransform="translate(0 -327.89)"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#fff" />
+                      <stop offset="1" stop-color="#8e68a4" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    class="svg-diamond"
+                    d="M267.3,445.8l127.2-178a6.6,6.6,0,0,0,0-7.8L267.3,82a6.67,6.67,0,0,0-12.1,3.9v356A6.67,6.67,0,0,0,267.3,445.8Z"
+                    transform="translate(-13.5 -14.3)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M431.6,493.7l60.9-60.9v60.9ZM13.5,453.6v35.2H34V453.6Z"
+                    transform="translate(-13.5 -14.3)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M67.1,453.6v35.2H45.8V453.6Zm354-416.8h77.3V14.3H421.1V36.8Z"
+                    transform="translate(-13.5 -14.3)"
+                  />
+                  <path
+                    d="M255.2,470.7h0a7.92,7.92,0,0,1-6.5-3.3l-142-198.8a8,8,0,1,1,13.1-9.3L255.2,449,387.4,263.9,255.2,78.9,142.1,237.2a8,8,0,0,1-13.1-9.3L248.6,60.4a8,8,0,0,1,6.5-3.4,7.92,7.92,0,0,1,6.5,3.3l142,198.8a8,8,0,0,1,0,9.3l-142,198.8A7.44,7.44,0,0,1,255.2,470.7Z"
+                    transform="translate(-13.5 -14.3)"
+                  />
+                </svg>
+                <span>DIAMOND</span>
+              </button>
+              <!----- DIAMOND HEADING END ----->
+            </div>
+            <!----- TAB HEADINGS END ----->
+            <!----- BRONZE TAB ----->
+            <div
+              role="tabpanel"
+              id="tabs--1__tabpanel--1"
+              aria-labelledby="tabs--1__tab--1"
+              tabindex="0"
+              class="grid"
+            >
+              <span class="col-xs-12 col-lg-6 moto"
+                >JOIN OUR KICKSTARTER CAMPAIGN AND GET REWARDED!</span
+              >
+              <span class="col-xs-12 col-lg-6 type">
+                <ul class="unlisted">
+                  <li class="title">
+                    <p>A series</p>
+                    <span></span>
+                    <p>20€ or more</p>
+                  </li>
+                  <li class="desc">Training webinars and social mentions!</li>
+                  <li>
+                    4 x training webinars about PUXL framework community
+                    version.
+                  </li>
+                  <li>
+                    1 x post on our blog where we will mention you as a bronze
+                    crowd
+                  </li>
+                </ul>
+              </span>
+              <span class="col-xs-12 col-lg-6 type">
+                <ul class="unlisted">
+                  <li class="title">
+                    <p>B series</p>
+                    <span></span>
+                    <p>40€ or more</p>
+                  </li>
+                  <li class="desc">
+                    Everything included in A series and also you will receive a
+                    PUXL framework early license premium version.
+                  </li>
+                  <li>
+                    4 x training webinars about PUXL framework community
+                    version.
+                  </li>
+                  <li>
+                    1 x post on our blog where we will mention you as a bronze
+                    crowd.
+                  </li>
+                  <li>PUXL framework premium early license</li>
+                </ul>
+              </span>
+              <span class="col-xs-12 col-lg-6 type">
+                <ul class="unlisted">
+                  <li class="title">
+                    <p>C series</p>
+                    <span></span>
+                    <p>70€ or more</p>
+                  </li>
+                  <li class="desc">
+                    B series + 3 months premium membership of PUXL Zone.
+                  </li>
+                  <li>
+                    4 x training webinars about PUXL framework community
+                    version.
+                  </li>
+                  <li>
+                    1 x post on our blog where we will mention you as a bronze
+                    crowd
+                  </li>
+                  <li>PUXL framework premium early license</li>
+                  <li>3 x months premium membership of PUXL Zone</li>
+                </ul>
+              </span>
+
+              <a
+                class="cta btn round lg col-xs-12 col-md-8 col-md-offset-2"
+                href=""
+                >TAKE ME TO THE CAMPAIGN</a
+              >
+            </div>
+            <!----- BRONZE TAB END ----->
+            <!----- SILVER TAB ----->
+            <div
+              role="tabpanel"
+              id="tabs--1__tabpanel--2"
+              aria-labelledby="tabs--1__tab--2"
+              tabindex="-1"
+              hidden=""
+              class="grid"
+            >
+              <span class="col-xs-12 col-lg-6 moto"
+                >JOIN OUR KICKSTARTER CAMPAIGN AND GET REWARDED!</span
+              >
+              <span class="col-xs-12 col-lg-6 type">
+                <ul class="unlisted">
+                  <li class="title">
+                    <p>A series</p>
+                    <span></span>
+                    <p>150€ or more</p>
+                  </li>
+                  <li class="desc">
+                    You're a Silver Crowdfunder! Enjoy more premium months for
+                    yourself.
+                  </li>
+                  <li>6 x months premium membership of PUXL Zone</li>
+                  <li>PUXL framework premium early license</li>
+                  <li>
+                    4 x training webinars about PUXL framework community
+                    version.
+                  </li>
+                  <li>
+                    A weekly thank you post on Twitter like a Silver Crowdfunder
+                  </li>
+                </ul>
+              </span>
+              <span class="col-xs-12 col-lg-6 type">
+                <ul class="unlisted">
+                  <li class="title">
+                    <p>B series</p>
+                    <span></span>
+                    <p>150€ or more</p>
+                  </li>
+
+                  <li>12 x months premium membership of PUXL Zone.</li>
+                  <li>
+                    * Limited edition PUXL Art Design T-shirt (only for the
+                    first 50)
+                  </li>
+                  <li>PUXL framework premium early license</li>
+                  <li>
+                    4 x training webinars about PUXL framework community
+                    version.
+                  </li>
+                  <li>
+                    A weekly thank you post on Twitter like a Silver Crowdfunder
+                  </li>
+                </ul>
+              </span>
+
+              <a
+                class="cta btn round lg col-xs-12 col-md-8 col-md-offset-2"
+                href=""
+                >TAKE ME TO THE CAMPAIGN</a
+              >
+            </div>
+            <!----- SILVER TAB END ----->
+            <!----- GOLD TAB ----->
+            <div
+              role="tabpanel"
+              id="tabs--1__tabpanel--3"
+              aria-labelledby="tabs--1__tab--3"
+              tabindex="-1"
+              hidden=""
+              class="grid"
+            >
+              <span class="col-xs-12 col-lg-6 moto"
+                >JOIN OUR KICKSTARTER CAMPAIGN AND GET REWARDED!</span
+              >
+              <span class="col-xs-12 col-lg-6 type">
+                <ul class="unlisted">
+                  <li class="title">
+                    <p>A series</p>
+                    <span></span>
+                    <p>300€ or more</p>
+                  </li>
+                  <li class="desc">
+                    Exclusive rewards for you who want to be part of the change.
+                  </li>
+                  <li>
+                    * Limited edition PUXL Art Design T-shirt (only for the
+                    first 50)
+                  </li>
+                  <li>6 x months premium membership of PUXL Zone</li>
+                  <li>PUXL framework premium early license</li>
+                  <li>PUXL basic certification course (PL1 certificate)</li>
+                  <li>PUXL advantage certification course (PL2 certificate)</li>
+                  <li>Individual thank you card on our website</li>
+                  <li>
+                    Tweet of appreciation to each of the Gold crowdfunders.
+                  </li>
+                </ul>
+              </span>
+              <a
+                class="cta btn round lg col-xs-12 col-md-8 col-md-offset-2"
+                href=""
+                >TAKE ME TO THE CAMPAIGN</a
+              >
+            </div>
+            <!----- GOLD TAB END ----->
+            <!----- DIAMOND TAB ----->
+            <div
+              role="tabpanel"
+              id="tabs--1__tabpanel--4"
+              aria-labelledby="tabs--1__tab--4"
+              tabindex="-1"
+              hidden=""
+              class="grid"
+            >
+              <span class="col-xs-12 col-lg-6 moto"
+                >JOIN OUR KICKSTARTER CAMPAIGN AND GET REWARDED!</span
+              >
+              <span class="col-xs-12 col-lg-6 type">
+                <ul class="unlisted">
+                  <li class="title">
+                    <p>A series</p>
+                    <span></span>
+                    <p>1000€ or more</p>
+                  </li>
+                  <li class="desc">We commit ourselves to you for life!</li>
+                  <li>PUXL framework early lifetime premium version license</li>
+                  <li>12 x months premium membership of PUXL Zone.</li>
+                  <li>
+                    * Limited edition PUXL Art Design T-shirt (only for the
+                    first 50)
+                  </li>
+                  <li>PUXL basic certification course (PL1 certificate)</li>
+                  <li>PUXL advantage certification course (PL2 certificate)</li>
+                  <li>
+                    Tweet of appreciation to each of the Diamond crowdfunders.
+                  </li>
+                  <li>Individual thank you medium-size card on our website</li>
+                </ul>
+              </span>
+              <a
+                class="cta btn round lg col-xs-12 col-md-8 col-md-offset-2"
+                href=""
+                >TAKE ME TO THE CAMPAIGN</a
+              >
+            </div>
+            <!----- DIAMOND TAB END ----->
+          </div>
+        </div>
+        <!----- TABS END ----->
+      </section>
+
+      <section id="donate">
+        <div class="grid">
+          <h3 class="text--center">You could also help us this way</h3>
+          <p>
+            Support the project without reward, simply because it is interesting
+            to you and you want to contribute to the creation of a more
+            accessible, more universal Internet.
+          </p>
+
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            target="_top"
+            class="col-xs-12"
+          >
+            <input name="cmd" type="hidden" value="_s-xclick" />
+            <input
+              name="hosted_button_id"
+              type="hidden"
+              value="PGXLFA9ZVY3VJ"
+            />
+            <input
+              class="paypal"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+              name="submit"
+              src="https://www.paypalobjects.com/en_US/ES/i/btn/btn_donateCC_LG.gif"
+              type="image"
+            />
+            <img
+              loading="lazy"
+              src="https://www.paypal.com/en_ES/i/scr/pixel.gif"
+              alt=""
+              width="1"
+              height="1"
+              border="0"
+              bnfhvu3n7=""
+            />
+          </form>
+        </div>
+      </section>
+
+      <!-------------------------// DONATION END //------------------------->
+
+      <!-------------------------// ABOUT THE TRIBE //------------------------->
+      <section id="about">
+          <h2 class="text--center">About us, the PUXL clan</h2>
+          <div class="team">
+            <figure>
+              <figcaption>
+                <h3>
+                  Xavier Crespo -
+                  <abbr title="Chief Executive Officer (CEO)">CEO</abbr>
+                </h3>
+                <p>
+                  Business model designer. He is in charge of the strategies
+                </p>
+                <ul class="text--center unlisted">
+                  <li>
+                    <a href="https://www.linkedin.com/in/crespoxac/" class="bar-btn-icn" role="button" aria-label="LinkedIn">
+                      <img
+                        src="img/linkedin.svg"
+                        alt="LinkedIn"
+                        title="LinkedIn"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/XavierCrespoGriman/" class="bar-btn-icn" role="button" aria-label="Facebook">
+                      <img
+                        src="img/facebook.svg"
+                        alt="Facebook"
+                        title="Facebook"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/Xac001" class="bar-btn-icn" role="button" aria-label="Twitter">
+                      <img
+                        src="img/twitter.svg"
+                        alt="Twitter"
+                        title="Twitter"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                </ul>
+              </figcaption>
+              <img src="img/xavier_crespo.jpg" alt="Xavier" class="circle" />
+            </figure>
+            <figure>
+              <img src="img/iñigo_garcia.jpg" alt="Iñigo" class="circle" />
+              <figcaption>
+                <h3>
+                  Iñigo García -
+                  <abbr title="Chief Technical Officer (CTO)">CTO</abbr>
+                </h3>
+                <p>
+                  Framework lead developer. He makes sure that everything is
+                  accessible
+                </p>
+                <ul class="text--center unlisted">
+                  <li>
+                    <a href="https://www.linkedin.com/in/mrkanuel/" class="bar-btn-icn" role="button" aria-label="LinkedIn">
+                      <img
+                        src="img/linkedin.svg"
+                        alt="LinkedIn"
+                        title="LinkedIn"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="google.es" class="bar-btn-icn" role="button" aria-label="Facebook">
+                      <img
+                        src="img/facebook.svg"
+                        alt="Facebook"
+                        title="Facebook"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/MrKanuel" class="bar-btn-icn" role="button" aria-label="Twitter">
+                      <img
+                        src="img/twitter.svg"
+                        alt="Twitter"
+                        title="Twitter"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+            <figure>
+              <figcaption>
+                <h3>
+                  Luis Doviso -
+                  <abbr title="Chief Creative Officer (CCO)">CCO</abbr>
+                </h3>
+                <p>
+                  Creative Head of the brand. He leads the global brand
+                  ambassador program
+                </p>
+                <ul class="text--center unlisted">
+                  <li>
+                    <a href="https://www.linkedin.com/in/luisdoviso/" class="bar-btn-icn" role="button" aria-label="LinkedIn">
+                      <img
+                        src="img/linkedin.svg"
+                        alt="LinkedIn"
+                        title="LinkedIn"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/doviso" class="bar-btn-icn" role="button" aria-label="Facebook">
+                      <img
+                        src="img/facebook.svg"
+                        alt="Facebook"
+                        title="Facebook"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/DDoviso" class="bar-btn-icn" role="button" aria-label="Twitter">
+                      <img
+                        src="img/twitter.svg"
+                        alt="Twitter"
+                        title="Twitter"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                </ul>
+              </figcaption>
+              <img src="img/luis_doviso.jpg" alt="Luis" class="circle" />
+            </figure>
+            <figure>
+              <img src="img/jean_zozaya.jpg" alt="Jean" class="circle" />
+              <figcaption>
+                <h3>
+                  Jean Zozaya -
+                  <abbr title="Chief Marketing Officer (CMO)">CMO</abbr>
+                </h3>
+                <p>
+                  Marketing strategist. He manages all social network
+                  interactions
+                </p>
+                <ul class="text--center unlisted">
+                  <li>
+                    <a href="https://www.linkedin.com/in/jeanzozaya/?originalSubdomain=es" class="bar-btn-icn" role="button" aria-label="LinkedIn">
+                      <img
+                        src="img/linkedin.svg"
+                        alt="LinkedIn"
+                        title="LinkedIn"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/Jean.Zozaya" class="bar-btn-icn" role="button" aria-label="Facebook">
+                      <img
+                        src="img/facebook.svg"
+                        alt="Facebook"
+                        title="Facebook"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/zzyjean" class="bar-btn-icn" role="button" aria-label="Twitter">
+                      <img
+                        src="img/twitter.svg"
+                        alt="Twitter"
+                        title="Twitter"
+                        aria-hidden="true"
+                    /></a>
+                  </li>
+                </ul>
+              </figcaption>
+            </figure>
+            <div class="deco"></div>
+          </div>
+      </section>
+      <!-------------------------// ABOUT THE TRIBE END //------------------------->
+    </main>
+    <!-------------------------// MAIN END //------------------------->
+
+    <!-- Sticky anchor content here -->
+    <!-------------------------// FOOTER //------------------------->
+    <!-- SOCIAL MEDIA LINKS -->
+    <footer role="contentinfo" id="footer" class="grid">
+      <div class="headline col-xs-12">
+        <h2>
+          The internet has to be for everyone.<br />
+          Let us make the Web accessible again.
+        </h2>
+      </div>
+
+      <a
+        class="cta btn round lg col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 col-xl-4 col-xl-offset-4"
+        href=""
+        >Join US IN KICKSTARTER!</a
+      >
+
+      <nav class="socialmedia col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" aria-label="Social Media links">
+        <ul class="unlisted h">
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="Email">
+              <img
+                src="img/envelope.svg"
+                alt="Email"
+                title="Email"
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="Twitter">
+              <img
+                src="img/twitter.svg"
+                alt="Twitter"
+                title="Twitter"
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="Facebook">
+              <img
+                src="img/facebook.svg"
+                alt="Facebook"
+                title="Facebook"
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="Github">
+              <img
+                src="img/github.svg"
+                alt="Github"
+                title="Github"
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="Slack">
+              <img
+                src="img/slack.svg"
+                alt="Slack"
+                title="Slack"
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="LinkedIn">
+              <img
+                src="img/linkedin.svg"
+                alt="LinkedIn"
+                title="LinkedIn"
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="Eventbrite">
+              <img
+                src="img/eventbrite.svg"
+                alt="Eventbrite"
+                title="Eventbrite"
+                aria-hidden="true"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="bar-btn-icn" role="button" aria-label="Youtube">
+              <img
+                src="img/youtube.svg"
+                alt="Youtube"
+                title="Youtube"
+                aria-hidden="true"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- LEGAL LINKS -->
+      <nav class="legal col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 col-xl-4 col-xl-offset-4" aria-label="Legal statements">
+        <ul class="unlisted h">
+          <li><a href="#">info@puxlaccessibility.zone</a></li>
+          <li>
+            <a href="https://puxlaccessibility.zone/aviso-legal/">Legal</a>
+          </li>
+          <li>
+            <a href="https://puxlaccessibility.zone/politica-de-privacidad/"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a href="https://puxlaccessibility.zone/politica-de-cookies/"
+              >Cookies policy</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CREDITS -->
+      <div class="credits col-xs-12">
+        <a href="index.html"
+          ><img
+            src="img/puxl-logo-white.svg"
+            alt="PUXL Accessibility"
+            title="PUXL Accessibility"
+        /></a>
+
+        <p>
+          With
+          <img
+            src="img/puxl-heart_1.svg"
+            alt="love"
+            title="love"
+            class="love"
+          />
+          from Basque Country
+        </p>
+      </div>
+    </footer>
+    <!-------------------------// FOOTER END //------------------------->
+    <!--WITH MUCH LOVE FROM THE BASQUE COUNTRY-->
+
+    <script src="js/accordion.js"></script>
+    <script src="js/puxl-js/tabs.js"></script>
+    <script src="js/puxl-js/appBar.js"></script>
+    <script src="js/nav-scroll.js"></script>
+    <script>
+      "use strict";
+      //  WHAT WE HAVE DONE, FUNCIONAMIENTO DE LAS TARJETAS
+      //  <LEER MÁS> ES UN BOTÓN QUE ACTIVA/DESACTIVA UNAS CLASES
+      //  QUE CAMBIAN EL HEIGHT DE UNA ETIQUETA PARA QUE MUESTRE
+      //  SU CONTENIDO O NO
+      let readMoreButton = document.querySelectorAll("#done button.read");
+      let Tarjeta = document.querySelectorAll("#done article .development");
+      let readMoreButtonDeco = document.querySelectorAll(
+        "#done button.read .deco span:nth-of-type(2)"
+      );
+      let barRight = document.querySelectorAll("#done .bar");
+
+
+
+
+
+
+
+
+
+
+       const budgetMaking = document.getElementById('making');
+       const budgetTaxes = document.getElementById('taxes');
+       const budgetOther = document.getElementById('other');
+       const budgetFunding = document.getElementById('funding');
+
+      const listItemMaking = document.getElementById('list-item-making');
+      const listItemTaxes = document.getElementById('list-item-taxes');
+      const listItemOther = document.getElementById('list-item-other');
+      const listItemFunding = document.getElementById('list-item-funding')
+
+
+      const budgetArray = [
+      listItemMaking, listItemTaxes, listItemOther, listItemFunding
+      ];
+
+
+
+
+
+
+
+
+
+
+
+      // If <html> tag contains class="no-js".
+      if (document.documentElement.classList.contains("no-js")) {
+        // Remove class="no-js" from <html>.
+        document.documentElement.classList.remove("no-js");
+        // Add class="js" to <html>.
+        document.documentElement.classList.add("js");
+      }
+
+      for (let i = 0; i < readMoreButton.length; i++) {
+        readMoreButton[i].onclick = function () {
+          Tarjeta[i].classList.toggle("unfolded");
+          readMoreButtonDeco[i].classList.toggle("vertical");
+          barRight[i].classList.toggle("unfolded");
+        };
+      }
+
+      // Initialize app bar.
+      puxl_appBar(
+        // id
+        "app-bar",
+        // iconPath
+        "img/puxl-icons/",
+        // iconOpened
+        "cross.svg",
+        // iconClosed
+        "menu-burger.svg",
+        // txtOpened
+        "Close navigation menu",
+        // txtClosed
+        "Open navigation menu"
+      );
+
+      // Initialize tabs.
+      puxl_tabs();
+
+      budgetArray.forEach(function (item) {
+
+        item.addEventListener('mouseover',function () {
+          document.getElementById(item.classList[0]).querySelectorAll('*').forEach(function (item) {
+            item.classList.add("this");
+          });
+        });
+
+        listItemMaking.addEventListener('mouseout', function () {
+          document.getElementById(item.classList[0]).querySelectorAll('*').forEach(function (item) {
+            item.classList.remove("this");
+         });
+       });
+
+      });
+
+
+    </script>
+  </body>
+</html>
