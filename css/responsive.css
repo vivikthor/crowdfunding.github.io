@@ -89,6 +89,7 @@
         margin-top: 1.8rem !important;
 
 }
+}
 
 /* /// ---------------------------------------------------- /// */
 /* /// ------------------------ LG ------------------------ /// */
@@ -243,6 +244,12 @@
 /* /// ---------------------------------------------------- /// */
 @media only screen and (max-width: 768px) {
 
+
+    a.cta {
+        padding: 1rem;
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+    }
 
     section {
         padding: 4rem;
@@ -548,5 +555,10 @@
     footer#footer .legal ul {
         flex-flow: column nowrap;
     }
-}
+
+    a.cta {
+        padding: 1rem;
+        letter-spacing: 2px;
+        font-size: 1rem;
+    }
 }
