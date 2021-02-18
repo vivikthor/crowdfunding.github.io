@@ -67,9 +67,26 @@
     }
 
 /* --- BUDGET --- */
-    section#budget ul li span {
-        flex-flow: column wrap;
-    }
+section#budget ul li svg {
+    grid-area: svg;
+}
+
+section#budget ul li:nth-of-type(1){
+grid-area: what;
+}
+section#budget ul li:nth-of-type(2){
+grid-area: much;
+}
+
+#budget ul li {
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "svg what"
+    "svg much";
+    overflow-x: scroll;
+}
 
     /* --- DONATE --- */
     section#donate form {
@@ -130,9 +147,6 @@
         width: 10rem;
     }
 
-    #doing .zonemap ul li:nth-child(1) {
-        margin-top: 5rem;
-    }
 
     #doing .zonemap ul li {
         grid-template-areas:
@@ -245,12 +259,6 @@
 @media only screen and (max-width: 768px) {
 
 
-    a.cta {
-        padding: 1rem;
-        letter-spacing: 2px;
-        font-size: 1.3rem;
-    }
-
     section {
         padding: 4rem;
     }
@@ -259,6 +267,7 @@
     /* --- APP-BAR --- */
     #app-bar #app-bar__menu {
         padding: 1rem;
+        padding-bottom: 5rem;
     }
 
     .app.bar .subheading[aria-hidden=false] a {
@@ -475,27 +484,9 @@
     }
 
     section#budget ul li {
-        grid-template-columns: 60px 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    section#budget ul li svg {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    section#budget ul li span {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    section#budget ul li span p {
         font-size: 1.2rem;
-
     }
+    
 
 
     /* --- DONATE --- */
@@ -507,13 +498,13 @@
         margin: 0;
     }
 
-    .tabs>div:first-of-type>button.tab-icn-txt.v {
-        padding: .5rem;
-    }
-
     .tabs>div:first-of-type>button[class*=icn]>img,
     .tabs>div:first-of-type>button[class*=icn]>svg {
         width: 3rem;
+    }
+
+    .tabs div[role=tabpanel]{
+        padding: .2em;
     }
 
     .tabs div[role=tabpanel] .moto {
@@ -544,10 +535,6 @@
         font-size: 1.8rem;
     }
 
-    footer#footer a.cta {
-        margin-bottom: 5rem;
-    }
-
     footer .socialmedia {
         margin-bottom: 1rem;
     }
@@ -557,8 +544,12 @@
     }
 
     a.cta {
-        padding: 1rem;
+        padding: .5em;
+        margin: 0 auto 5rem auto;
+        width: 100%;
         letter-spacing: 2px;
-        font-size: 1rem;
+        font-size: 16px;
     }
+
+
 }
