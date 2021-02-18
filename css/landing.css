@@ -193,13 +193,9 @@ div#app-bar h1 {
 
 /* --- --- */
 
-/* .navbar li:hover a {
-    border-radius: 1em;
-    font-weight: 700;
-    padding: .25em;
-    transform: translateX(20px);
-} */
-.navbar li a:hover {
+.navbar li a:hover,
+.navbar li a.current
+ {
     border-radius: 1em;
     font-weight: 700;
     padding: .25em;
@@ -232,6 +228,7 @@ div#app-bar h1 {
 
     background-color: transparent;
  }
+
 /* /// ------------------------ NAVBAR END ------------------------ /// */
 
 /* /// ------------------------ HEADER ------------------------ /// */
@@ -1566,25 +1563,6 @@ footer .socialmedia {
 
 /* --- READ MORE BUTTON DECORATION --- */
 
-
-
-button.read {
-    margin: 0 auto;
-    padding: 1rem;
-    width: 50%;
-    color: var(--negro);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0;
-    box-shadow: 0 0 0 2px var(--negro);
-}
-
-button.read p {
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1.6rem;
-}
 
 button.read span.deco {
     position: relative;
