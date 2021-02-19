@@ -20,13 +20,10 @@
 
   <body>
     <!--
-  LISTA DE COSAS QUE NO ENTIENDO:
-
-
   LISTA DE COSAS POR HACER:
   - TODA LA ACCESIBILIDAD
-  - LAS RUTAS DE LOS LINKS DE KICKSTARTER ETC.
-
+  - LAS RUTAS DE LOS LINKS DE KICKSTARTER
+  - REVISAR LINKS LEGALES Y PAYPAL
 -->
 
     <a class="jump-link" href="#main__content">Jump to main content</a>
@@ -78,15 +75,15 @@
     <!-------------------------// NAVBAR //------------------------->
     <nav id="navbar" class="pc navbar">
       <ul class="unlisted">
-        <li><a href="#intro">THE PROJECT</a></li>
-        <li><a href="#done">WHAT WE HAVE DONE</a></li>
-        <li><a href="#doing">WHAT WE ARE DOING NOW</a></li>
-        <li><a href="#fund">WHAT WE WANT TO FUND</a></li>
-        <li><a href="#budget">PROJECT BUDGET</a></li>
-        <li><a href="#environment">ENVIRONMENTAL COMMITMENT</a></li>
-        <li><a href="#goals">OUR STRETCH GOALS</a></li>
-        <li><a href="#contributions">DONATION REWARDING</a></li>
-        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#intro">The project</a></li>
+        <li><a href="#done">What we have done</a></li>
+        <li><a href="#doing">What we are doing now</a></li>
+        <li><a href="#fund">What we want to fund</a></li>
+        <li><a href="#budget">Project Budget</a></li>
+        <li><a href="#environment">Environmental Commitment</a></li>
+        <li><a href="#goals">Our Stretch Goals</a></li>
+        <li><a href="#contributions">Donation rewarding</a></li>
+        <li><a href="#about">About us</a></li>
         <li>
           <a href="#"
             ><img
@@ -436,15 +433,15 @@
       <!-------------------------// DOING NOW //------------------------->
 
       <section id="doing">
-        <div class="grid ñ">
-          <h2 class="col-xs-12 text--center ñ">What we are doing now</h2>
-          <p class="col-xs-12 ñ">
+        <div class="grid">
+          <h2 class="col-xs-12 text--center">What we are doing now</h2>
+          <p class="col-xs-12">
             <strong>PUXL Accessibility Zone</strong> is the starting point for
             making an universal and accessible Web. A space that puts tools
             available to centralize on a single platform all the effort that is
             made in Web accessibility worldwide.
           </p>
-          <p class="col-xs-12 ñ">
+          <p class="col-xs-12">
             We want to turn the accessibility into the new standard of web
             development on a global scale.
           </p>
@@ -548,10 +545,10 @@
         <!-----// FUND LIST END//----->
 
         <!-----// PUXL EASEY CODING //----->
-        <div id="puxl-easy-coding" class="grid ñ">
-          <img alt="" class="shape ñ" src="img/puxl-section1.svg"/>
-          <img alt="" class="link-img ñ" src="img/PUXL-Easy Coding Deco1.svg"/>
-          <span class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-2 ñ">
+        <div id="puxl-easy-coding" class="grid">
+          <img alt="" class="shape" src="img/puxl-section1.svg"/>
+          <img alt="" class="link-img" src="img/PUXL-Easy Coding Deco1.svg"/>
+          <span class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-2">
             <img alt="" src="img/PUXL-Easy Coding.svg"/>
             <img alt="" class="deco" src="img/PUXL-Easy Coding Deco.svg"/>
           </span>
@@ -584,10 +581,7 @@
             <title>Pie chart showing the four budget stretches: funding, making, other and taxes.</title>
             <defs>
               <style>
-                g#making *,
-                g#taxes *,
-                g#other *,
-                g#funding * {
+                g * {
                   fill: none;
                   stroke: white;
                   stroke-width: .25em;
@@ -855,7 +849,7 @@
         <div id="accordion-section-goals" class="grid development"
         aria-labelledby="accordion-button-goals" tabindex="-1">
 
-          <p class="col-xs-12 note text--center">This is a text-only representation in order to be accesible to anyone, but we made a beautiful infographic about this.<br><a href="#">Watch it here!</a></p>
+          <p class="col-xs-12 note text--center">This is a text-only representation in order to be accesible to anyone, but we made a beautiful infographic about this. Be careful!, it will open in a new tab<br><a href="img/PUXL-STRETCH-GOALS.png" target="_blank">Watch it here!</a></p>
 
           <article class="goal card card-inverted col-xs-12 col-md-4">
             <span
@@ -1913,32 +1907,17 @@
     <!-------------------------// FOOTER END //------------------------->
     <!--WITH MUCH LOVE FROM THE BASQUE COUNTRY-->
 
-    <script src="js/accordion.js"></script>
     <script src="js/puxl-js/tabs.js"></script>
     <script src="js/puxl-js/appBar.js"></script>
     <script src="js/nav-scroll.js"></script>
+    <script src="js/accordion.js"></script>
     <script>
       "use strict";
-      //  WHAT WE HAVE DONE, FUNCIONAMIENTO DE LAS TARJETAS
-      //  <LEER MÁS> ES UN BOTÓN QUE ACTIVA/DESACTIVA UNAS CLASES
-      //  QUE CAMBIAN EL HEIGHT DE UNA ETIQUETA PARA QUE MUESTRE
-      //  SU CONTENIDO O NO
-      let readMoreButton = document.querySelectorAll("#done button.read");
-      let Tarjeta = document.querySelectorAll("#done article .development");
-      let readMoreButtonDeco = document.querySelectorAll(
-        "#done button.read .deco span:nth-of-type(2)"
-      );
+      
+
       let barRight = document.querySelectorAll("#done .bar");
-
-
-
-
-
-
-
-
-
-
+      
+      
        const budgetMaking = document.getElementById('making');
        const budgetTaxes = document.getElementById('taxes');
        const budgetOther = document.getElementById('other');
@@ -1947,8 +1926,24 @@
       const listItemTaxes = document.querySelector('#list-item-taxes');
       const listItemOther = document.querySelector('#list-item-other');
       const listItemFunding = document.querySelector('#list-item-funding');
-
+      
       const budgetArray = [ listItemMaking, listItemTaxes, listItemOther, listItemFunding ];
+      
+      ////////////  DESPLEGAR SECIONES ONCLICK NAV  ////////////////
+
+
+
+
+
+
+
+
+
+
+      //  WHAT WE HAVE DONE, FUNCIONAMIENTO DE LAS TARJETAS
+      //  <LEER MÁS> ES UN BOTÓN QUE ACTIVA/DESACTIVA UNAS CLASES
+      //  QUE CAMBIAN EL HEIGHT DE UNA ETIQUETA PARA QUE MUESTRE
+      //  SU CONTENIDO O NO
 
 
       // If <html> tag contains class="no-js".
@@ -1957,14 +1952,6 @@
         document.documentElement.classList.remove("no-js");
         // Add class="js" to <html>.
         document.documentElement.classList.add("js");
-      }
-
-      for (let i = 0; i < readMoreButton.length; i++) {
-        readMoreButton[i].onclick = function () {
-          Tarjeta[i].classList.toggle("unfolded");
-          readMoreButtonDeco[i].classList.toggle("vertical");
-          barRight[i].classList.toggle("unfolded");
-        };
       }
 
       // Initialize app bar.
@@ -1986,23 +1973,9 @@
       // Initialize tabs.
       puxl_tabs();
 
-      // budgetArray.forEach(function (item) {
-      //   let highlight = function () {
-      //     document.getElementById(item.classList[0]).querySelectorAll('*').forEach(function (item) {
-      //       item.classList.add("this");
-      //     });
-      //   }
 
-      //   item.addEventListener('mouseover', highlight);
-      //   item.addEventListener('click', highlight);
 
-      //   item.addEventListener('mouseout', function () {
-      //     document.getElementById(item.classList[0]).querySelectorAll('*').forEach(function (item) {
-      //       item.classList.remove("this");
-      //    });
-      //  });
-
-      // });
+      ////////////  BUDGET GRAPH  ////////////////
       budgetArray.forEach(function (item) {
         let chartWedge = document.getElementById(item.classList[0]).querySelectorAll('*');
 

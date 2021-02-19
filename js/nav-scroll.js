@@ -1,7 +1,7 @@
 'use strict';
 
-let mainNavLinks = document.querySelectorAll("#navbar ul li a");
-let mainSections = document.querySelectorAll("main section");
+var mainNavLinks = document.querySelectorAll("#navbar ul li a");
+var mainSections = document.querySelectorAll("main section");
 
 window.addEventListener("scroll", function () {
   let fromTop = window.scrollY;

@@ -64,6 +64,7 @@
     /* --- PUXL EASY CODING --- */
     #fund #puxl-easy-coding {
         padding: 15rem 5rem;
+        display: block;
     }
 
 /* --- BUDGET --- */
@@ -411,12 +412,17 @@ grid-area: much;
 /* /// ---------------------------------------------------- /// */
 @media only screen and (max-width: 480px) {
 
+    h1, h2, h3, h4, h5, h6{
+        font-size: 1.5em;
+    }
+
     *,
     p {
         font-size: 1.2rem;
     }
 
     /* --- INTRO --- */
+
     #intro blockquote {
         padding: 1rem;
     }
@@ -433,6 +439,14 @@ grid-area: much;
     #intro .graph p b {
         font-size: 5rem;
         line-height: 5rem;
+    }
+
+    #intro strong {
+        font-size: unset;
+    }
+
+    #intro .myths {
+        margin: 14em 0 0 0;
     }
 
     #intro .myths h5, #intro .myths b{
