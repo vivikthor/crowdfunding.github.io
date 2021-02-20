@@ -224,6 +224,12 @@ grid-area: much;
         width: 100%;
     }
 
+    /* --- GOALS --- */
+    #goals .goals-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
     /* --- DONATE --- */
     .tabs>div:first-of-type{
         overflow: hidden;
@@ -404,7 +410,10 @@ grid-area: much;
     #done article .bar {
         display: none;
     }
-
+    /* --- GOALS --- */
+    #goals .goals-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* /// ---------------------------------------------------- /// */
@@ -504,6 +513,11 @@ grid-area: much;
 
 
     /* --- DONATE --- */
+
+    .tabs>div:first-of-type {
+        flex-flow: column nowrap;
+    }
+
     .tab-wrapper {
         padding: 0;
     }
