@@ -65,7 +65,7 @@ section {
 }
 
 
- #budget h2, #environment h2, #goals h2 {
+#environment h2, #goals h2 {
      margin-bottom: unset !important;
     }
 
@@ -165,68 +165,91 @@ div#app-bar h1 {
     z-index: 90;
     left: 4em;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-2rem,-50%);
+    transition: 0.3s ease;
 }
 
-.navbar li {
+#navbar li {
     padding: .75em 0;
     position: relative;
     transition: 0.3s ease;
 }
 
 
-.navbar a {
+#navbar a {
     display: block;
     font-size: 1.3rem;
+    font-weight: 700;
     text-decoration: none;
     border: none !important;
     font-family: 'Open Sans', sans-serif;
-    color: var(--negro) !important;
+    color: rgba(0, 0, 0, 0) !important;
     transition: 0.2s ease;
+}
+
+#navbar a.visible {
+    color: var(--negro) !important;
 }
 
 #navbar li a.current,
 #navbar li a:focus,
 #navbar li a:hover{
-    padding-left: 2em;
-    background-color: var(--puxl) !important;
-    color: var(--roto) !important;
+    padding-left: 3em;
     border-radius: 50em;
     font-weight: 700;
     transition: all .2s;
+    color: var(--negro) !important;
 }
 
+#navbar li a:focus {
+    background-color: var(--puxl);
+color: var(--roto) !important;
+}
+
+#navbar li a:last-of-type{
+    background-color: transparent !important;
+}
 /* --- EL GUIÓN --- */
-.navbar li a::before {
+#navbar li a::before {
     content: "";
     position: absolute;
     top: 50%;
     left: -1.8em;
     width: 1em;
-    height: 1px;
+    height: 2px;
     background-color: var(--negro);
     transition: 0.2s ease;
 }
-
-/* --- --- */
-
-.navbar li a:hover::before,
-.navbar li a.current::before,
+#navbar li a:hover::before,
+#navbar li a.current::before,
 #navbar li a:focus::before {
-    height: 2px;
-    width: 3em;
+    width: 4em;
 }
 
-/* --- KICKSTARTER --- 
+
+
+/* --- KICKSTARTER --- */
+
+#navbar li:last-of-type {
+    opacity: 0;
+}
+
+#navbar.active li:last-of-type {
+    opacity: 1;
+}
 
 #navbar li:last-of-type:focus a,
 #navbar li:last-of-type:hover a {
-
     background-color: transparent !important;
+    opacity: 1;
  }
-*/
 
-.navbar img {
+#navbar:focus,
+#navbar:hover{
+    transform: translate(0,-50%);
+}
+
+#navbar img {
     height: 2em;
 }
 
@@ -269,6 +292,8 @@ header#hero iframe {
 }
 
 /* /// ------------------------ HEADER END ------------------------ /// */
+
+
 /* /// ------------------------ MAIN ------------------------ /// */
 
 
@@ -280,10 +305,6 @@ section#intro {
     color: var(--roto) !important;
     padding-bottom: 10rem;
 }
-
-/* --- BLOCKQUOTE --- */
-/* Faltan las comillas de cierre. Debe de ser un ::after,
-a mí por lo menos no me aparecen */
 
 #intro blockquote {
     padding: 2rem 4rem;
@@ -709,6 +730,20 @@ button.read {
     border: 3px solid var(--puxl);
 }
 
+#done .gallery {
+    display: grid;
+    padding-bottom: 2rem;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+    text-align: center;
+}
+
+#done .gallery figure img {
+    margin: 0 auto;
+    width: 3rem;
+}
+
+
 /* /// ------------------------ ALREADY DONE END ------------------------ /// */
 
 
@@ -940,9 +975,13 @@ button.read {
     color: var(--roto) !important;
 }
 
+#budget h2 {
+    font-size: 4rem;
+}
+
 #budget svg.graph {
     padding: 0 10vw;
-    margin: 0 auto 5rem auto !important;
+    margin: 0 auto 2rem auto !important;
     width: 100%;
     cursor: pointer;
 }
@@ -958,6 +997,7 @@ button.read {
 }
 
 #budget .total {
+    margin-bottom: 7rem;
     width: 100%;
     font-size: 5rem;
 }
@@ -1143,10 +1183,10 @@ section#contributions .message p:nth-of-type(2) {
     display: none;
 }
 
-.tabs button.tab-icn-txt {
+.tabs>div:first-of-type>button.tab-icn-txt.v{
     flex: 1;
-    padding: 2rem;
-    box-shadow: 0 0 0 2px var(--negro);
+    padding: 2rem 1.5rem;
+    border: 2px solid var(--negro) !important;
     background-color: var(--roto);
 }
 
@@ -1164,18 +1204,38 @@ section#contributions .message p:nth-of-type(2) {
     border-radius: 0 25px 0 0 !important;
 }
 
-/* ----- TAB HEADING ----- */
+/* ----- TABS HEADING ----- */
 
 .tabs>div:first-of-type>button[class*=icn]>img,
 .tabs>div:first-of-type>button[class*=icn]>svg {
     margin: 0 auto 1rem auto !important;
-    width: 6rem;
+    width: 6em;
     height: auto;
 }
 
-.tabs>div:first-of-type>button[aria-selected=true] {
-    border-width: 1rem;
-    border-color: var(--puxl);
+.tabs>div:first-of-type>button[aria-selected=false] {
+    border-color: transparent;
+    border-width: 0;
+    border-style: none;
+}
+
+
+/* ----- SELECTED LINEA MORADA ----- */
+
+.tabs>div:first-of-type>button[aria-selected=true]{
+    position: relative;
+    border-bottom: 2px;
+    border-color: var(--negro);
+}
+
+.tabs>div:first-of-type>button[aria-selected=true]::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: .6rem;
+    background-color: var(--puxl);
 }
 
 /* ----- TAB BODY ----- */
@@ -1188,13 +1248,19 @@ section#contributions .message p:nth-of-type(2) {
 
 .tabs div[role=tabpanel] .moto {
     height: 100%;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.moto svg {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 40%;
 }
 
 .tabs div[role=tabpanel] .type li {
@@ -1290,7 +1356,7 @@ section#contributions .message p:nth-of-type(2) {
 /* /// ----- DONATE ----- /// */
 
 section#donate {
-    margin: 15vh auto;
+    margin: 7vh auto;
 }
 
 section#donate * {
@@ -1493,7 +1559,7 @@ footer .headline {
 
 a.cta {
     margin-bottom: 5rem;
-    padding: 2rem;
+    padding: .5rem;
     border-radius: 10rem;
     text-transform: uppercase;
     font-weight: 700;

@@ -231,32 +231,29 @@ grid-area: much;
 
 
     /* --- DONATE --- */
-    .tabs>div:first-of-type{
-        overflow: hidden;
-    }
-
+    
     section#donate form {
         padding: 0 30%;
     }
-
+    
     .tab-wrapper {
         padding: 0 4rem;
     }
-
+    
     .tabs div[role=tabpanel] {
         padding: 1.5rem;
     }
-
+    
     .tabs div[role=tabpanel] .type li.title {
         width: auto;
     }
-
+    
     /* --- FOOTER --- */
     .legal ul {
         flex-wrap: wrap;
     }
-
-
+    
+    
 }
 
 
@@ -414,6 +411,14 @@ grid-area: much;
     #goals .goals-wrapper {
         grid-template-columns: 1fr;
     }
+
+    /* --- DONATE --- */
+    .tabs>div:first-of-type>button.tab-icn-txt.v{
+        padding: 1rem 0;
+        width: 25%;
+        font-weight: 700;
+        word-break: break-word;
+    }
 }
 
 /* /// ---------------------------------------------------- /// */
@@ -513,10 +518,6 @@ grid-area: much;
 
 
     /* --- DONATE --- */
-
-    .tabs>div:first-of-type {
-        flex-flow: column nowrap;
-    }
 
     .tab-wrapper {
         padding: 0;
